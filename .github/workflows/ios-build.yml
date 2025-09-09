@@ -38,20 +38,35 @@ jobs:
         echo "Node.js: $(node --version)"
         echo "npm: $(npm --version)"
         
-    - name: Install CocoaPods Dependencies
+    - name: Clean CocoaPods Environment
       run: |
         cd ios
-        echo "=== Installing CocoaPods dependencies ==="
+        echo "=== Cleaning CocoaPods environment ==="
         
-        # Clean previous installation
+        # Complete cleanup
         rm -rf Pods Podfile.lock build
         rm -rf ~/Library/Developer/Xcode/DerivedData/GlicoTrack-* || true
         
-        # Install with clean state
-        pod install --repo-update --verbose
+        # Update CocoaPods and repos
+        sudo gem install cocoapods
+        pod repo update
         
-        echo "=== Verifying installation ==="
+    - name: Install CocoaPods Dependencies  
+      run: |
+        cd ios
+        echo "=== Installing CocoaPods dependencies with debug ==="
+        set -x  # Enable debug output
+        
+        # Validate Podfile syntax
+        pod lib lint --allow-warnings || echo "Pod lint completed with warnings"
+        
+        # Install with verbose output and error handling
+        pod install --repo-update --verbose 2>&1 | tee pod-install.log
+        
+        echo "=== Installation verification ==="
         ls -la Pods/ | head -10
+        echo "=== React module check ==="
+        find Pods -name "React*" -type d | head -5
         
     - name: Build iOS App (Debug)
       run: |
