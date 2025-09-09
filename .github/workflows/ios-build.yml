@@ -25,7 +25,15 @@ jobs:
     - name: Install Dependencies
       run: |
         npm install --legacy-peer-deps
-        cd ios && pod install --repo-update && cd ..
+        
+    - name: Clean and Install CocoaPods
+      run: |
+        cd ios
+        # Clean previous installation
+        rm -rf Pods
+        rm -rf Podfile.lock
+        # Fresh install with verbose logging
+        pod install --repo-update --verbose
       
     - name: Select Xcode Version
       run: sudo xcode-select -s /Applications/Xcode_16.2.app/Contents/Developer
@@ -44,6 +52,13 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-pods-
           
+    - name: Verify React Native Headers
+      run: |
+        cd ios
+        echo "Checking for React Native headers..."
+        find Pods -name "RCTBridge.h" | head -5 || echo "RCTBridge.h not found in Pods"
+        find ../node_modules/react-native -name "RCTBridge.h" | head -5 || echo "RCTBridge.h not found in node_modules"
+        
     - name: Clean Build Directory
       run: |
         cd ios
