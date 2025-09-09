@@ -47,9 +47,16 @@ jobs:
         rm -rf build/
         rm -rf ~/Library/Developer/Xcode/DerivedData/GlicoTrack-*
         
+    - name: Fix React Native Headers Issue
+      run: |
+        cd ios
+        # Add React Native headers to project search paths
+        sed -i '' 's|"$(SRCROOT)/../node_modules/react-native/React",|"$(SRCROOT)/../node_modules/react-native/React", "$(SRCROOT)/../node_modules/react-native/Libraries",|g' GlicoTrack.xcodeproj/project.pbxproj
+        
     - name: Build iOS App (Debug)
       run: |
         cd ios
+        # Try building with React Native compatibility flags
         xcodebuild \
           -workspace GlicoTrack.xcworkspace \
           -scheme GlicoTrack \
@@ -59,6 +66,8 @@ jobs:
           -allowProvisioningUpdates \
           CODE_SIGNING_ALLOWED=NO \
           ONLY_ACTIVE_ARCH=NO \
+          SWIFT_ENABLE_EXPLICIT_MODULES=NO \
+          CLANG_ENABLE_MODULES=YES \
           clean build
           
     - name: Build iOS App for Device (Release - Optional)
