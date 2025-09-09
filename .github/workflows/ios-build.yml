@@ -56,15 +56,35 @@ jobs:
         # Add React Native headers to project search paths
         sed -i '' 's|"$(SRCROOT)/../node_modules/react-native/React",|"$(SRCROOT)/../node_modules/react-native/React", "$(SRCROOT)/../node_modules/react-native/Libraries",|g' GlicoTrack.xcodeproj/project.pbxproj
         
+    - name: Find Available Simulator
+      id: find_simulator
+      run: |
+        # Find first available iOS simulator
+        SIMULATOR=$(xcrun simctl list devices available | grep "iPhone" | head -1 | sed 's/.*iPhone/iPhone/' | sed 's/ (.*)//' | xargs)
+        if [ -z "$SIMULATOR" ]; then
+          SIMULATOR=$(xcrun simctl list devices available | grep "iPad" | head -1 | sed 's/.*iPad/iPad/' | sed 's/ (.*)//' | xargs)
+        fi
+        echo "Found simulator: $SIMULATOR"
+        echo "simulator=$SIMULATOR" >> $GITHUB_OUTPUT
+        
     - name: Build iOS App (Debug)
       run: |
         cd ios
-        # Try building with React Native compatibility flags
+        # Use the found simulator or fallback to generic platform
+        SIMULATOR="${{ steps.find_simulator.outputs.simulator }}"
+        if [ -n "$SIMULATOR" ]; then
+          DESTINATION="platform=iOS Simulator,name=$SIMULATOR"
+        else
+          DESTINATION="generic/platform=iOS Simulator"
+        fi
+        
+        echo "Building for destination: $DESTINATION"
+        
         xcodebuild \
           -workspace GlicoTrack.xcworkspace \
           -scheme GlicoTrack \
           -configuration Debug \
-          -destination 'platform=iOS Simulator,OS=latest' \
+          -destination "$DESTINATION" \
           -derivedDataPath build \
           -allowProvisioningUpdates \
           CODE_SIGNING_ALLOWED=NO \
