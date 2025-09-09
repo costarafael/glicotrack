@@ -59,21 +59,21 @@ jobs:
     - name: Find Available Simulator
       id: find_simulator
       run: |
-        # Find first available iOS simulator
-        SIMULATOR=$(xcrun simctl list devices available | grep "iPhone" | head -1 | sed 's/.*iPhone/iPhone/' | sed 's/ (.*)//' | xargs)
-        if [ -z "$SIMULATOR" ]; then
-          SIMULATOR=$(xcrun simctl list devices available | grep "iPad" | head -1 | sed 's/.*iPad/iPad/' | sed 's/ (.*)//' | xargs)
+        # Find the first available iPhone simulator name
+        SIMULATOR_NAME=$(xcrun simctl list devices available | grep -m 1 "iPhone" | sed -E 's/.*    (iPhone[^(]*) \(.*/\1/' | xargs)
+        if [ -z "$SIMULATOR_NAME" ]; then
+          SIMULATOR_NAME=$(xcrun simctl list devices available | grep -m 1 "iPad" | sed -E 's/.*    (iPad[^(]*) \(.*/\1/' | xargs)
         fi
-        echo "Found simulator: $SIMULATOR"
-        echo "simulator=$SIMULATOR" >> $GITHUB_OUTPUT
+        echo "Found simulator: $SIMULATOR_NAME"
+        echo "simulator=$SIMULATOR_NAME" >> $GITHUB_OUTPUT
         
     - name: Build iOS App (Debug)
       run: |
         cd ios
-        # Use the found simulator or fallback to generic platform
-        SIMULATOR="${{ steps.find_simulator.outputs.simulator }}"
-        if [ -n "$SIMULATOR" ]; then
-          DESTINATION="platform=iOS Simulator,name=$SIMULATOR"
+        # Use the found simulator or fallback to generic platform  
+        SIMULATOR_NAME="${{ steps.find_simulator.outputs.simulator }}"
+        if [ -n "$SIMULATOR_NAME" ]; then
+          DESTINATION="platform=iOS Simulator,name=$SIMULATOR_NAME"
         else
           DESTINATION="generic/platform=iOS Simulator"
         fi
