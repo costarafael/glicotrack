@@ -45,11 +45,13 @@ target 'GlicoTrack' do
       aggregate_target.user_project.targets.each do |target|
         if target.name == 'GlicoTrack'
           target.build_configurations.each do |config|
-            config.build_settings['HEADER_SEARCH_PATHS'] ||= []
-            config.build_settings['HEADER_SEARCH_PATHS'] << '"$(SRCROOT)/../node_modules/react-native/React"'
-            config.build_settings['HEADER_SEARCH_PATHS'] << '"$(SRCROOT)/../node_modules/react-native/React/Base"'
-            config.build_settings['HEADER_SEARCH_PATHS'] << '"$(SRCROOT)/../node_modules/react-native"'
-            config.build_settings['HEADER_SEARCH_PATHS'] << '"$(SRCROOT)/../node_modules/react-native/Libraries"'
+            # Use union operator to avoid duplicates and ensure paths are always present
+            config.build_settings['HEADER_SEARCH_PATHS'] = (config.build_settings['HEADER_SEARCH_PATHS'] || []) | [
+              '$(SRCROOT)/../node_modules/react-native/React',
+              '$(SRCROOT)/../node_modules/react-native/React/Base',
+              '$(SRCROOT)/../node_modules/react-native',
+              '$(SRCROOT)/../node_modules/react-native/Libraries'
+            ]
           end
         end
       end

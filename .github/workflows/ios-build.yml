@@ -37,8 +37,20 @@ jobs:
         rm -rf Podfile.lock
         rm -rf build
         rm -rf ~/Library/Developer/Xcode/DerivedData/GlicoTrack-* || true
+        
+        # Verify node_modules/react-native exists before pod install
+        echo "=== Pre-install verification ==="
+        ls -la ../node_modules/react-native/React/ || echo "❌ React Native React directory missing"
+        ls -la ../node_modules/react-native/Libraries/ || echo "❌ React Native Libraries directory missing"
+        
         # Fresh install with verbose logging
+        echo "=== Starting CocoaPods installation ==="
         pod install --repo-update --verbose
+        
+        echo "=== Post-install verification ==="
+        echo "Checking if RCTBridge.h exists after pod install:"
+        find ../node_modules/react-native -name "RCTBridge.h" -type f | head -3 || echo "❌ RCTBridge.h not found in node_modules"
+        find Pods -name "RCTBridge.h" -type f | head -3 || echo "❌ RCTBridge.h not found in Pods"
       
     - name: Select Xcode Version
       run: sudo xcode-select -s /Applications/Xcode_16.2.app/Contents/Developer
