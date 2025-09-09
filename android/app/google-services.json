@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "573155689296",
+    "project_id": "glicotrack-41d22",
+    "storage_bucket": "glicotrack-41d22.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:573155689296:android:fcda674e6687a18b502255",
+        "android_client_info": {
+          "package_name": "com.glicotrack"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9YiF_W-lltc7CQ9D1Ou40uNKI3tMeNgw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

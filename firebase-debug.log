@@ -1,0 +1,1033 @@
+[debug] [2025-09-06T15:49:36.135Z] Checked if tokens are valid: false, expires at: 1757117673316
+[debug] [2025-09-06T15:49:36.140Z] Checked if tokens are valid: false, expires at: 1757117673316
+[debug] [2025-09-06T15:49:36.141Z] > refreshing access token with scopes: []
+[debug] [2025-09-06T15:49:36.142Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-06T15:49:36.142Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-06T15:49:36.155Z] Checked if tokens are valid: false, expires at: 1757117673316
+[debug] [2025-09-06T15:49:36.155Z] Checked if tokens are valid: false, expires at: 1757117673316
+[debug] [2025-09-06T15:49:36.155Z] > refreshing access token with scopes: []
+[debug] [2025-09-06T15:49:36.155Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-06T15:49:36.155Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-06T15:49:36.156Z] Checked if tokens are valid: false, expires at: 1757117673316
+[debug] [2025-09-06T15:49:36.156Z] Checked if tokens are valid: false, expires at: 1757117673316
+[debug] [2025-09-06T15:49:36.156Z] > refreshing access token with scopes: []
+[debug] [2025-09-06T15:49:36.156Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-06T15:49:36.156Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-06T15:49:36.157Z] Checked if tokens are valid: false, expires at: 1757117673316
+[debug] [2025-09-06T15:49:36.157Z] Checked if tokens are valid: false, expires at: 1757117673316
+[debug] [2025-09-06T15:49:36.157Z] > refreshing access token with scopes: []
+[debug] [2025-09-06T15:49:36.157Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-06T15:49:36.157Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-06T15:49:36.157Z] Checked if tokens are valid: false, expires at: 1757117673316
+[debug] [2025-09-06T15:49:36.158Z] Checked if tokens are valid: false, expires at: 1757117673316
+[debug] [2025-09-06T15:49:36.158Z] > refreshing access token with scopes: []
+[debug] [2025-09-06T15:49:36.158Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-06T15:49:36.158Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-06T15:49:36.167Z] Checked if tokens are valid: false, expires at: 1757117673316
+[debug] [2025-09-06T15:49:36.167Z] Checked if tokens are valid: false, expires at: 1757117673316
+[debug] [2025-09-06T15:49:36.167Z] > refreshing access token with scopes: []
+[debug] [2025-09-06T15:49:36.167Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-06T15:49:36.167Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-06T15:49:36.168Z] Checked if tokens are valid: false, expires at: 1757117673316
+[debug] [2025-09-06T15:49:36.168Z] Checked if tokens are valid: false, expires at: 1757117673316
+[debug] [2025-09-06T15:49:36.168Z] > refreshing access token with scopes: []
+[debug] [2025-09-06T15:49:36.168Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-06T15:49:36.168Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-06T15:49:36.169Z] Checked if tokens are valid: false, expires at: 1757117673316
+[debug] [2025-09-06T15:49:36.169Z] Checked if tokens are valid: false, expires at: 1757117673316
+[debug] [2025-09-06T15:49:36.169Z] > refreshing access token with scopes: []
+[debug] [2025-09-06T15:49:36.169Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-06T15:49:36.169Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-06T15:49:36.170Z] Checked if tokens are valid: false, expires at: 1757117673316
+[debug] [2025-09-06T15:49:36.170Z] Checked if tokens are valid: false, expires at: 1757117673316
+[debug] [2025-09-06T15:49:36.170Z] > refreshing access token with scopes: []
+[debug] [2025-09-06T15:49:36.170Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-06T15:49:36.170Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-06T15:49:36.171Z] Checked if tokens are valid: false, expires at: 1757117673316
+[debug] [2025-09-06T15:49:36.171Z] Checked if tokens are valid: false, expires at: 1757117673316
+[debug] [2025-09-06T15:49:36.171Z] > refreshing access token with scopes: []
+[debug] [2025-09-06T15:49:36.171Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-06T15:49:36.171Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-06T15:49:36.172Z] Checked if tokens are valid: false, expires at: 1757117673316
+[debug] [2025-09-06T15:49:36.172Z] Checked if tokens are valid: false, expires at: 1757117673316
+[debug] [2025-09-06T15:49:36.172Z] > refreshing access token with scopes: []
+[debug] [2025-09-06T15:49:36.172Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-06T15:49:36.172Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-06T15:49:36.172Z] Checked if tokens are valid: false, expires at: 1757117673316
+[debug] [2025-09-06T15:49:36.172Z] Checked if tokens are valid: false, expires at: 1757117673316
+[debug] [2025-09-06T15:49:36.173Z] > refreshing access token with scopes: []
+[debug] [2025-09-06T15:49:36.173Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-06T15:49:36.173Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-06T15:49:36.174Z] Checked if tokens are valid: false, expires at: 1757117673316
+[debug] [2025-09-06T15:49:36.174Z] Checked if tokens are valid: false, expires at: 1757117673316
+[debug] [2025-09-06T15:49:36.174Z] > refreshing access token with scopes: []
+[debug] [2025-09-06T15:49:36.174Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-06T15:49:36.174Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-06T15:49:36.174Z] Checked if tokens are valid: false, expires at: 1757117673316
+[debug] [2025-09-06T15:49:36.174Z] Checked if tokens are valid: false, expires at: 1757117673316
+[debug] [2025-09-06T15:49:36.174Z] > refreshing access token with scopes: []
+[debug] [2025-09-06T15:49:36.175Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-06T15:49:36.175Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-06T15:49:36.175Z] Checked if tokens are valid: false, expires at: 1757117673316
+[debug] [2025-09-06T15:49:36.175Z] Checked if tokens are valid: false, expires at: 1757117673316
+[debug] [2025-09-06T15:49:36.175Z] > refreshing access token with scopes: []
+[debug] [2025-09-06T15:49:36.175Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-06T15:49:36.175Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-06T15:49:36.513Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-06T15:49:36.513Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-06T15:49:36.526Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com [none]
+[debug] [2025-09-06T15:49:36.526Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-06T15:49:36.527Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-06T15:49:36.527Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-06T15:49:36.537Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com [none]
+[debug] [2025-09-06T15:49:36.537Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-06T15:49:36.538Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-06T15:49:36.538Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-06T15:49:36.548Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ [none]
+[debug] [2025-09-06T15:49:36.548Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-06T15:49:36.548Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-06T15:49:36.548Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-06T15:49:36.560Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com [none]
+[debug] [2025-09-06T15:49:36.560Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-06T15:49:36.560Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-06T15:49:36.560Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-06T15:49:36.572Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com [none]
+[debug] [2025-09-06T15:49:36.572Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-06T15:49:36.573Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-06T15:49:36.573Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-06T15:49:36.584Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-09-06T15:49:36.584Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-06T15:49:36.585Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-06T15:49:36.585Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-06T15:49:36.596Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com [none]
+[debug] [2025-09-06T15:49:36.596Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-06T15:49:36.598Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-06T15:49:36.598Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-06T15:49:36.607Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ [none]
+[debug] [2025-09-06T15:49:36.607Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-06T15:49:36.608Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-06T15:49:36.608Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-06T15:49:36.618Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com [none]
+[debug] [2025-09-06T15:49:36.618Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-06T15:49:36.621Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-06T15:49:36.621Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-06T15:49:36.635Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com [none]
+[debug] [2025-09-06T15:49:36.635Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-06T15:49:36.641Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-06T15:49:36.641Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-06T15:49:36.652Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com [none]
+[debug] [2025-09-06T15:49:36.653Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-06T15:49:36.657Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-06T15:49:36.658Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-06T15:49:36.672Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-09-06T15:49:36.672Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-06T15:49:36.674Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-06T15:49:36.674Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-06T15:49:36.684Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-09-06T15:49:36.685Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-06T15:49:36.688Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-06T15:49:36.688Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-06T15:49:36.702Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com [none]
+[debug] [2025-09-06T15:49:36.702Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-06T15:49:36.704Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-06T15:49:36.705Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-06T15:49:36.717Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ [none]
+[debug] [2025-09-06T15:49:36.717Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-06T15:49:37.542Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com 403
+[debug] [2025-09-06T15:49:37.542Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com [omitted]
+[debug] [2025-09-06T15:49:37.567Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com 403
+[debug] [2025-09-06T15:49:37.567Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com [omitted]
+[debug] [2025-09-06T15:49:37.620Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com 403
+[debug] [2025-09-06T15:49:37.621Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com [omitted]
+[debug] [2025-09-06T15:49:37.632Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com 200
+[debug] [2025-09-06T15:49:37.632Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2025-09-06T15:49:37.642Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com 200
+[debug] [2025-09-06T15:49:37.642Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2025-09-06T15:49:37.663Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-09-06T15:49:37.663Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-09-06T15:49:37.663Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com 200
+[debug] [2025-09-06T15:49:37.663Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2025-09-06T15:49:37.710Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com 200
+[debug] [2025-09-06T15:49:37.711Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com [omitted]
+[debug] [2025-09-06T15:49:37.720Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com 200
+[debug] [2025-09-06T15:49:37.721Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com [omitted]
+[debug] [2025-09-06T15:49:37.743Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-09-06T15:49:37.743Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-09-06T15:49:37.744Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-09-06T15:49:37.744Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-09-06T15:49:37.850Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com 200
+[debug] [2025-09-06T15:49:37.850Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com [omitted]
+[debug] [2025-09-06T15:49:38.012Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ 200
+[debug] [2025-09-06T15:49:38.012Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ [omitted]
+[debug] [2025-09-06T15:49:38.016Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-09-06T15:49:38.017Z] > authorizing via signed-in user (aredesrafael@gmail.com)
+[debug] [2025-09-06T15:49:38.039Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ 200
+[debug] [2025-09-06T15:49:38.039Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ [omitted]
+[debug] [2025-09-06T15:49:38.042Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-09-06T15:49:38.042Z] > authorizing via signed-in user (aredesrafael@gmail.com)
+[debug] [2025-09-06T15:49:38.061Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ 200
+[debug] [2025-09-06T15:49:38.061Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ [omitted]
+[debug] [2025-09-06T15:49:50.875Z] Checked if tokens are valid: true, expires at: 1757177375705
+[debug] [2025-09-06T15:49:50.877Z] Checked if tokens are valid: true, expires at: 1757177375705
+[debug] [2025-09-06T15:49:50.877Z] Checked if tokens are valid: true, expires at: 1757177375705
+[debug] [2025-09-06T15:49:50.877Z] Checked if tokens are valid: true, expires at: 1757177375705
+[debug] [2025-09-06T15:49:50.877Z] Checked if tokens are valid: true, expires at: 1757177375705
+[debug] [2025-09-06T15:49:50.877Z] Checked if tokens are valid: true, expires at: 1757177375705
+[debug] [2025-09-06T15:49:50.877Z] Checked if tokens are valid: true, expires at: 1757177375705
+[debug] [2025-09-06T15:49:50.877Z] Checked if tokens are valid: true, expires at: 1757177375705
+[debug] [2025-09-06T15:49:50.877Z] Checked if tokens are valid: true, expires at: 1757177375705
+[debug] [2025-09-06T15:49:50.878Z] Checked if tokens are valid: true, expires at: 1757177375705
+[debug] [2025-09-06T15:49:50.878Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ [none]
+[debug] [2025-09-06T15:49:50.878Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-06T15:49:50.891Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com [none]
+[debug] [2025-09-06T15:49:50.891Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-06T15:49:50.891Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com [none]
+[debug] [2025-09-06T15:49:50.891Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-06T15:49:50.892Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-09-06T15:49:50.892Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-06T15:49:50.892Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com [none]
+[debug] [2025-09-06T15:49:50.892Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-06T15:49:50.901Z] Checked if tokens are valid: true, expires at: 1757177375705
+[debug] [2025-09-06T15:49:50.901Z] Checked if tokens are valid: true, expires at: 1757177375705
+[debug] [2025-09-06T15:49:50.901Z] Checked if tokens are valid: true, expires at: 1757177375705
+[debug] [2025-09-06T15:49:50.901Z] Checked if tokens are valid: true, expires at: 1757177375705
+[debug] [2025-09-06T15:49:50.901Z] Checked if tokens are valid: true, expires at: 1757177375705
+[debug] [2025-09-06T15:49:50.901Z] Checked if tokens are valid: true, expires at: 1757177375705
+[debug] [2025-09-06T15:49:50.901Z] Checked if tokens are valid: true, expires at: 1757177375705
+[debug] [2025-09-06T15:49:50.901Z] Checked if tokens are valid: true, expires at: 1757177375705
+[debug] [2025-09-06T15:49:50.901Z] Checked if tokens are valid: true, expires at: 1757177375705
+[debug] [2025-09-06T15:49:50.901Z] Checked if tokens are valid: true, expires at: 1757177375705
+[debug] [2025-09-06T15:49:50.902Z] Checked if tokens are valid: true, expires at: 1757177375705
+[debug] [2025-09-06T15:49:50.902Z] Checked if tokens are valid: true, expires at: 1757177375705
+[debug] [2025-09-06T15:49:50.902Z] Checked if tokens are valid: true, expires at: 1757177375705
+[debug] [2025-09-06T15:49:50.902Z] Checked if tokens are valid: true, expires at: 1757177375705
+[debug] [2025-09-06T15:49:50.902Z] Checked if tokens are valid: true, expires at: 1757177375705
+[debug] [2025-09-06T15:49:50.902Z] Checked if tokens are valid: true, expires at: 1757177375705
+[debug] [2025-09-06T15:49:50.902Z] Checked if tokens are valid: true, expires at: 1757177375705
+[debug] [2025-09-06T15:49:50.902Z] Checked if tokens are valid: true, expires at: 1757177375705
+[debug] [2025-09-06T15:49:50.902Z] Checked if tokens are valid: true, expires at: 1757177375705
+[debug] [2025-09-06T15:49:50.902Z] Checked if tokens are valid: true, expires at: 1757177375705
+[debug] [2025-09-06T15:49:50.902Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ [none]
+[debug] [2025-09-06T15:49:50.902Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-06T15:49:50.902Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com [none]
+[debug] [2025-09-06T15:49:50.902Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-06T15:49:50.903Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com [none]
+[debug] [2025-09-06T15:49:50.903Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-06T15:49:50.903Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-09-06T15:49:50.903Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-06T15:49:50.904Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com [none]
+[debug] [2025-09-06T15:49:50.904Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-06T15:49:50.904Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ [none]
+[debug] [2025-09-06T15:49:50.904Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-06T15:49:50.905Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com [none]
+[debug] [2025-09-06T15:49:50.905Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-06T15:49:50.905Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com [none]
+[debug] [2025-09-06T15:49:50.905Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-06T15:49:50.905Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-09-06T15:49:50.905Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-06T15:49:50.906Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com [none]
+[debug] [2025-09-06T15:49:50.906Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-06T15:49:51.839Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com 403
+[debug] [2025-09-06T15:49:51.839Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com [omitted]
+[debug] [2025-09-06T15:49:51.840Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com 403
+[debug] [2025-09-06T15:49:51.840Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com [omitted]
+[debug] [2025-09-06T15:49:51.843Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com 403
+[debug] [2025-09-06T15:49:51.843Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com [omitted]
+[debug] [2025-09-06T15:49:51.924Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-09-06T15:49:51.925Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-09-06T15:49:51.926Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com 200
+[debug] [2025-09-06T15:49:51.926Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2025-09-06T15:49:51.941Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com 200
+[debug] [2025-09-06T15:49:51.941Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2025-09-06T15:49:51.942Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com 200
+[debug] [2025-09-06T15:49:51.942Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2025-09-06T15:49:51.946Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com 200
+[debug] [2025-09-06T15:49:51.946Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com [omitted]
+[debug] [2025-09-06T15:49:51.948Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-09-06T15:49:51.948Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-09-06T15:49:51.948Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com 200
+[debug] [2025-09-06T15:49:51.949Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com [omitted]
+[debug] [2025-09-06T15:49:51.950Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-09-06T15:49:51.951Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-09-06T15:49:51.953Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com 200
+[debug] [2025-09-06T15:49:51.953Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com [omitted]
+[debug] [2025-09-06T15:49:52.132Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ 200
+[debug] [2025-09-06T15:49:52.132Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ [omitted]
+[debug] [2025-09-06T15:49:52.133Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ 200
+[debug] [2025-09-06T15:49:52.133Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ [omitted]
+[debug] [2025-09-06T15:49:52.138Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-09-06T15:49:52.139Z] > authorizing via signed-in user (aredesrafael@gmail.com)
+[debug] [2025-09-06T15:49:52.283Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ 200
+[debug] [2025-09-06T15:49:52.283Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ [omitted]
+[debug] [2025-09-06T15:49:52.286Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-09-06T15:49:52.287Z] > authorizing via signed-in user (aredesrafael@gmail.com)
+[debug] [2025-09-07T04:10:37.077Z] Checked if tokens are valid: false, expires at: 1757177375705
+[debug] [2025-09-07T04:10:37.079Z] Checked if tokens are valid: false, expires at: 1757177375705
+[debug] [2025-09-07T04:10:37.079Z] > refreshing access token with scopes: []
+[debug] [2025-09-07T04:10:37.080Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-07T04:10:37.080Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T04:10:37.092Z] Checked if tokens are valid: false, expires at: 1757177375705
+[debug] [2025-09-07T04:10:37.092Z] Checked if tokens are valid: false, expires at: 1757177375705
+[debug] [2025-09-07T04:10:37.092Z] > refreshing access token with scopes: []
+[debug] [2025-09-07T04:10:37.092Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-07T04:10:37.092Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T04:10:37.094Z] Checked if tokens are valid: false, expires at: 1757177375705
+[debug] [2025-09-07T04:10:37.095Z] Checked if tokens are valid: false, expires at: 1757177375705
+[debug] [2025-09-07T04:10:37.095Z] > refreshing access token with scopes: []
+[debug] [2025-09-07T04:10:37.095Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-07T04:10:37.095Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T04:10:37.095Z] Checked if tokens are valid: false, expires at: 1757177375705
+[debug] [2025-09-07T04:10:37.095Z] Checked if tokens are valid: false, expires at: 1757177375705
+[debug] [2025-09-07T04:10:37.095Z] > refreshing access token with scopes: []
+[debug] [2025-09-07T04:10:37.095Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-07T04:10:37.096Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T04:10:37.096Z] Checked if tokens are valid: false, expires at: 1757177375705
+[debug] [2025-09-07T04:10:37.096Z] Checked if tokens are valid: false, expires at: 1757177375705
+[debug] [2025-09-07T04:10:37.096Z] > refreshing access token with scopes: []
+[debug] [2025-09-07T04:10:37.096Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-07T04:10:37.096Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T04:10:37.109Z] Checked if tokens are valid: false, expires at: 1757177375705
+[debug] [2025-09-07T04:10:37.110Z] Checked if tokens are valid: false, expires at: 1757177375705
+[debug] [2025-09-07T04:10:37.110Z] > refreshing access token with scopes: []
+[debug] [2025-09-07T04:10:37.110Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-07T04:10:37.110Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T04:10:37.110Z] Checked if tokens are valid: false, expires at: 1757177375705
+[debug] [2025-09-07T04:10:37.110Z] Checked if tokens are valid: false, expires at: 1757177375705
+[debug] [2025-09-07T04:10:37.110Z] > refreshing access token with scopes: []
+[debug] [2025-09-07T04:10:37.110Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-07T04:10:37.110Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T04:10:37.111Z] Checked if tokens are valid: false, expires at: 1757177375705
+[debug] [2025-09-07T04:10:37.111Z] Checked if tokens are valid: false, expires at: 1757177375705
+[debug] [2025-09-07T04:10:37.111Z] > refreshing access token with scopes: []
+[debug] [2025-09-07T04:10:37.111Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-07T04:10:37.111Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T04:10:37.111Z] Checked if tokens are valid: false, expires at: 1757177375705
+[debug] [2025-09-07T04:10:37.111Z] Checked if tokens are valid: false, expires at: 1757177375705
+[debug] [2025-09-07T04:10:37.111Z] > refreshing access token with scopes: []
+[debug] [2025-09-07T04:10:37.111Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-07T04:10:37.111Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T04:10:37.112Z] Checked if tokens are valid: false, expires at: 1757177375705
+[debug] [2025-09-07T04:10:37.112Z] Checked if tokens are valid: false, expires at: 1757177375705
+[debug] [2025-09-07T04:10:37.112Z] > refreshing access token with scopes: []
+[debug] [2025-09-07T04:10:37.112Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-07T04:10:37.112Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T04:10:37.112Z] Checked if tokens are valid: false, expires at: 1757177375705
+[debug] [2025-09-07T04:10:37.112Z] Checked if tokens are valid: false, expires at: 1757177375705
+[debug] [2025-09-07T04:10:37.112Z] > refreshing access token with scopes: []
+[debug] [2025-09-07T04:10:37.112Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-07T04:10:37.112Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T04:10:37.113Z] Checked if tokens are valid: false, expires at: 1757177375705
+[debug] [2025-09-07T04:10:37.113Z] Checked if tokens are valid: false, expires at: 1757177375705
+[debug] [2025-09-07T04:10:37.113Z] > refreshing access token with scopes: []
+[debug] [2025-09-07T04:10:37.113Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-07T04:10:37.113Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T04:10:37.113Z] Checked if tokens are valid: false, expires at: 1757177375705
+[debug] [2025-09-07T04:10:37.113Z] Checked if tokens are valid: false, expires at: 1757177375705
+[debug] [2025-09-07T04:10:37.113Z] > refreshing access token with scopes: []
+[debug] [2025-09-07T04:10:37.113Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-07T04:10:37.113Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T04:10:37.114Z] Checked if tokens are valid: false, expires at: 1757177375705
+[debug] [2025-09-07T04:10:37.114Z] Checked if tokens are valid: false, expires at: 1757177375705
+[debug] [2025-09-07T04:10:37.114Z] > refreshing access token with scopes: []
+[debug] [2025-09-07T04:10:37.114Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-07T04:10:37.114Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T04:10:37.114Z] Checked if tokens are valid: false, expires at: 1757177375705
+[debug] [2025-09-07T04:10:37.114Z] Checked if tokens are valid: false, expires at: 1757177375705
+[debug] [2025-09-07T04:10:37.114Z] > refreshing access token with scopes: []
+[debug] [2025-09-07T04:10:37.114Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-07T04:10:37.114Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T04:10:37.336Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-07T04:10:37.336Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T04:10:37.347Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ [none]
+[debug] [2025-09-07T04:10:37.347Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-07T04:10:37.353Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-07T04:10:37.353Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T04:10:37.361Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com [none]
+[debug] [2025-09-07T04:10:37.361Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-07T04:10:37.363Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-07T04:10:37.363Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T04:10:37.372Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com [none]
+[debug] [2025-09-07T04:10:37.372Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-07T04:10:37.375Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-07T04:10:37.375Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T04:10:37.385Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com [none]
+[debug] [2025-09-07T04:10:37.385Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-07T04:10:37.386Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-07T04:10:37.386Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T04:10:37.396Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com [none]
+[debug] [2025-09-07T04:10:37.396Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-07T04:10:37.397Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-07T04:10:37.397Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T04:10:37.407Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-09-07T04:10:37.407Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-07T04:10:37.408Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-07T04:10:37.408Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T04:10:37.417Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com [none]
+[debug] [2025-09-07T04:10:37.417Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-07T04:10:37.418Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-07T04:10:37.418Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T04:10:37.426Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com [none]
+[debug] [2025-09-07T04:10:37.426Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-07T04:10:37.427Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-07T04:10:37.427Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T04:10:37.436Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com [none]
+[debug] [2025-09-07T04:10:37.436Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-07T04:10:37.437Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-07T04:10:37.437Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T04:10:37.445Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-09-07T04:10:37.445Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-07T04:10:37.446Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-07T04:10:37.446Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T04:10:37.456Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com [none]
+[debug] [2025-09-07T04:10:37.456Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-07T04:10:37.458Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-07T04:10:37.459Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T04:10:37.469Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ [none]
+[debug] [2025-09-07T04:10:37.469Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-07T04:10:37.470Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-07T04:10:37.470Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T04:10:37.480Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-09-07T04:10:37.480Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-07T04:10:37.481Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-07T04:10:37.481Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T04:10:37.489Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ [none]
+[debug] [2025-09-07T04:10:37.489Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-07T04:10:37.490Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-07T04:10:37.491Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T04:10:37.500Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com [none]
+[debug] [2025-09-07T04:10:37.500Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-07T04:10:38.402Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com 403
+[debug] [2025-09-07T04:10:38.402Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com [omitted]
+[debug] [2025-09-07T04:10:38.404Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com 403
+[debug] [2025-09-07T04:10:38.404Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com [omitted]
+[debug] [2025-09-07T04:10:38.407Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com 403
+[debug] [2025-09-07T04:10:38.407Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com [omitted]
+[debug] [2025-09-07T04:10:38.489Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com 200
+[debug] [2025-09-07T04:10:38.489Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com [omitted]
+[debug] [2025-09-07T04:10:38.502Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com 200
+[debug] [2025-09-07T04:10:38.502Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com [omitted]
+[debug] [2025-09-07T04:10:38.509Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com 200
+[debug] [2025-09-07T04:10:38.509Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2025-09-07T04:10:38.510Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-09-07T04:10:38.510Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-09-07T04:10:38.511Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-09-07T04:10:38.511Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-09-07T04:10:38.516Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com 200
+[debug] [2025-09-07T04:10:38.517Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2025-09-07T04:10:38.517Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com 200
+[debug] [2025-09-07T04:10:38.517Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com [omitted]
+[debug] [2025-09-07T04:10:38.536Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com 200
+[debug] [2025-09-07T04:10:38.537Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2025-09-07T04:10:38.544Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-09-07T04:10:38.545Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-09-07T04:10:38.763Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ 200
+[debug] [2025-09-07T04:10:38.763Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ [omitted]
+[debug] [2025-09-07T04:10:38.767Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-09-07T04:10:38.768Z] > authorizing via signed-in user (aredesrafael@gmail.com)
+[debug] [2025-09-07T04:10:38.768Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ 200
+[debug] [2025-09-07T04:10:38.768Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ [omitted]
+[debug] [2025-09-07T04:10:38.770Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-09-07T04:10:38.770Z] > authorizing via signed-in user (aredesrafael@gmail.com)
+[debug] [2025-09-07T04:10:38.771Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ 200
+[debug] [2025-09-07T04:10:38.771Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ [omitted]
+[debug] [2025-09-07T06:39:43.211Z] Checked if tokens are valid: false, expires at: 1757221836491
+[debug] [2025-09-07T06:39:43.214Z] Checked if tokens are valid: false, expires at: 1757221836491
+[debug] [2025-09-07T06:39:43.214Z] > refreshing access token with scopes: []
+[debug] [2025-09-07T06:39:43.215Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-07T06:39:43.215Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T06:39:43.228Z] Checked if tokens are valid: false, expires at: 1757221836491
+[debug] [2025-09-07T06:39:43.228Z] Checked if tokens are valid: false, expires at: 1757221836491
+[debug] [2025-09-07T06:39:43.228Z] > refreshing access token with scopes: []
+[debug] [2025-09-07T06:39:43.228Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-07T06:39:43.228Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T06:39:43.229Z] Checked if tokens are valid: false, expires at: 1757221836491
+[debug] [2025-09-07T06:39:43.230Z] Checked if tokens are valid: false, expires at: 1757221836491
+[debug] [2025-09-07T06:39:43.230Z] > refreshing access token with scopes: []
+[debug] [2025-09-07T06:39:43.230Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-07T06:39:43.230Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T06:39:43.230Z] Checked if tokens are valid: false, expires at: 1757221836491
+[debug] [2025-09-07T06:39:43.230Z] Checked if tokens are valid: false, expires at: 1757221836491
+[debug] [2025-09-07T06:39:43.231Z] > refreshing access token with scopes: []
+[debug] [2025-09-07T06:39:43.231Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-07T06:39:43.231Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T06:39:43.231Z] Checked if tokens are valid: false, expires at: 1757221836491
+[debug] [2025-09-07T06:39:43.231Z] Checked if tokens are valid: false, expires at: 1757221836491
+[debug] [2025-09-07T06:39:43.231Z] > refreshing access token with scopes: []
+[debug] [2025-09-07T06:39:43.231Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-07T06:39:43.231Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T06:39:43.244Z] Checked if tokens are valid: false, expires at: 1757221836491
+[debug] [2025-09-07T06:39:43.244Z] Checked if tokens are valid: false, expires at: 1757221836491
+[debug] [2025-09-07T06:39:43.244Z] > refreshing access token with scopes: []
+[debug] [2025-09-07T06:39:43.244Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-07T06:39:43.244Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T06:39:43.245Z] Checked if tokens are valid: false, expires at: 1757221836491
+[debug] [2025-09-07T06:39:43.245Z] Checked if tokens are valid: false, expires at: 1757221836491
+[debug] [2025-09-07T06:39:43.245Z] > refreshing access token with scopes: []
+[debug] [2025-09-07T06:39:43.245Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-07T06:39:43.245Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T06:39:43.246Z] Checked if tokens are valid: false, expires at: 1757221836491
+[debug] [2025-09-07T06:39:43.246Z] Checked if tokens are valid: false, expires at: 1757221836491
+[debug] [2025-09-07T06:39:43.246Z] > refreshing access token with scopes: []
+[debug] [2025-09-07T06:39:43.246Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-07T06:39:43.246Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T06:39:43.246Z] Checked if tokens are valid: false, expires at: 1757221836491
+[debug] [2025-09-07T06:39:43.246Z] Checked if tokens are valid: false, expires at: 1757221836491
+[debug] [2025-09-07T06:39:43.246Z] > refreshing access token with scopes: []
+[debug] [2025-09-07T06:39:43.246Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-07T06:39:43.246Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T06:39:43.247Z] Checked if tokens are valid: false, expires at: 1757221836491
+[debug] [2025-09-07T06:39:43.247Z] Checked if tokens are valid: false, expires at: 1757221836491
+[debug] [2025-09-07T06:39:43.247Z] > refreshing access token with scopes: []
+[debug] [2025-09-07T06:39:43.247Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-07T06:39:43.247Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T06:39:43.247Z] Checked if tokens are valid: false, expires at: 1757221836491
+[debug] [2025-09-07T06:39:43.247Z] Checked if tokens are valid: false, expires at: 1757221836491
+[debug] [2025-09-07T06:39:43.247Z] > refreshing access token with scopes: []
+[debug] [2025-09-07T06:39:43.247Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-07T06:39:43.247Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T06:39:43.248Z] Checked if tokens are valid: false, expires at: 1757221836491
+[debug] [2025-09-07T06:39:43.248Z] Checked if tokens are valid: false, expires at: 1757221836491
+[debug] [2025-09-07T06:39:43.248Z] > refreshing access token with scopes: []
+[debug] [2025-09-07T06:39:43.248Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-07T06:39:43.248Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T06:39:43.248Z] Checked if tokens are valid: false, expires at: 1757221836491
+[debug] [2025-09-07T06:39:43.248Z] Checked if tokens are valid: false, expires at: 1757221836491
+[debug] [2025-09-07T06:39:43.248Z] > refreshing access token with scopes: []
+[debug] [2025-09-07T06:39:43.248Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-07T06:39:43.248Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T06:39:43.248Z] Checked if tokens are valid: false, expires at: 1757221836491
+[debug] [2025-09-07T06:39:43.248Z] Checked if tokens are valid: false, expires at: 1757221836491
+[debug] [2025-09-07T06:39:43.248Z] > refreshing access token with scopes: []
+[debug] [2025-09-07T06:39:43.248Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-07T06:39:43.249Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T06:39:43.249Z] Checked if tokens are valid: false, expires at: 1757221836491
+[debug] [2025-09-07T06:39:43.249Z] Checked if tokens are valid: false, expires at: 1757221836491
+[debug] [2025-09-07T06:39:43.249Z] > refreshing access token with scopes: []
+[debug] [2025-09-07T06:39:43.249Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-07T06:39:43.249Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T06:39:43.483Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-07T06:39:43.483Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T06:39:43.497Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-09-07T06:39:43.497Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-07T06:39:43.505Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-07T06:39:43.505Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T06:39:43.516Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ [none]
+[debug] [2025-09-07T06:39:43.516Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-07T06:39:43.518Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-07T06:39:43.518Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T06:39:43.528Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com [none]
+[debug] [2025-09-07T06:39:43.528Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-07T06:39:43.529Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-07T06:39:43.529Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T06:39:43.540Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com [none]
+[debug] [2025-09-07T06:39:43.540Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-07T06:39:43.541Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-07T06:39:43.541Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T06:39:43.556Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ [none]
+[debug] [2025-09-07T06:39:43.556Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-07T06:39:43.557Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-07T06:39:43.557Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T06:39:43.568Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com [none]
+[debug] [2025-09-07T06:39:43.568Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-07T06:39:43.570Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-07T06:39:43.570Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T06:39:43.582Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com [none]
+[debug] [2025-09-07T06:39:43.582Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-07T06:39:43.583Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-07T06:39:43.583Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T06:39:43.595Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com [none]
+[debug] [2025-09-07T06:39:43.595Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-07T06:39:43.596Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-07T06:39:43.596Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T06:39:43.607Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com [none]
+[debug] [2025-09-07T06:39:43.607Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-07T06:39:43.610Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-07T06:39:43.610Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T06:39:43.622Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ [none]
+[debug] [2025-09-07T06:39:43.622Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-07T06:39:43.623Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-07T06:39:43.623Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T06:39:43.632Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-09-07T06:39:43.632Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-07T06:39:43.635Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-07T06:39:43.635Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T06:39:43.648Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-09-07T06:39:43.648Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-07T06:39:43.649Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-07T06:39:43.649Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T06:39:43.660Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com [none]
+[debug] [2025-09-07T06:39:43.660Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-07T06:39:43.664Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-07T06:39:43.664Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T06:39:43.673Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com [none]
+[debug] [2025-09-07T06:39:43.673Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-07T06:39:43.675Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-07T06:39:43.675Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-07T06:39:43.684Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com [none]
+[debug] [2025-09-07T06:39:43.684Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-07T06:39:44.545Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com 403
+[debug] [2025-09-07T06:39:44.545Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com [omitted]
+[debug] [2025-09-07T06:39:44.563Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com 403
+[debug] [2025-09-07T06:39:44.563Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com [omitted]
+[debug] [2025-09-07T06:39:44.563Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com 403
+[debug] [2025-09-07T06:39:44.563Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com [omitted]
+[debug] [2025-09-07T06:39:44.626Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-09-07T06:39:44.627Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-09-07T06:39:44.657Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com 200
+[debug] [2025-09-07T06:39:44.657Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2025-09-07T06:39:44.666Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com 200
+[debug] [2025-09-07T06:39:44.666Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com [omitted]
+[debug] [2025-09-07T06:39:44.676Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com 200
+[debug] [2025-09-07T06:39:44.676Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2025-09-07T06:39:44.696Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com 200
+[debug] [2025-09-07T06:39:44.696Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com [omitted]
+[debug] [2025-09-07T06:39:44.697Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com 200
+[debug] [2025-09-07T06:39:44.697Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2025-09-07T06:39:44.716Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-09-07T06:39:44.716Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-09-07T06:39:44.717Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-09-07T06:39:44.717Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-09-07T06:39:44.737Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com 200
+[debug] [2025-09-07T06:39:44.737Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com [omitted]
+[debug] [2025-09-07T06:39:44.879Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ 200
+[debug] [2025-09-07T06:39:44.879Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ [omitted]
+[debug] [2025-09-07T06:39:44.883Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-09-07T06:39:44.884Z] > authorizing via signed-in user (aredesrafael@gmail.com)
+[debug] [2025-09-07T06:39:44.885Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ 200
+[debug] [2025-09-07T06:39:44.885Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ [omitted]
+[debug] [2025-09-07T06:39:44.916Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ 200
+[debug] [2025-09-07T06:39:44.916Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ [omitted]
+[debug] [2025-09-07T06:39:44.919Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-09-07T06:39:44.919Z] > authorizing via signed-in user (aredesrafael@gmail.com)
+[debug] [2025-09-08T15:13:18.794Z] Checked if tokens are valid: false, expires at: 1757230782675
+[debug] [2025-09-08T15:13:18.796Z] Checked if tokens are valid: false, expires at: 1757230782675
+[debug] [2025-09-08T15:13:18.796Z] > refreshing access token with scopes: []
+[debug] [2025-09-08T15:13:18.797Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-08T15:13:18.797Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T15:13:18.810Z] Checked if tokens are valid: false, expires at: 1757230782675
+[debug] [2025-09-08T15:13:18.810Z] Checked if tokens are valid: false, expires at: 1757230782675
+[debug] [2025-09-08T15:13:18.810Z] > refreshing access token with scopes: []
+[debug] [2025-09-08T15:13:18.810Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-08T15:13:18.810Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T15:13:18.811Z] Checked if tokens are valid: false, expires at: 1757230782675
+[debug] [2025-09-08T15:13:18.811Z] Checked if tokens are valid: false, expires at: 1757230782675
+[debug] [2025-09-08T15:13:18.811Z] > refreshing access token with scopes: []
+[debug] [2025-09-08T15:13:18.811Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-08T15:13:18.811Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T15:13:18.812Z] Checked if tokens are valid: false, expires at: 1757230782675
+[debug] [2025-09-08T15:13:18.812Z] Checked if tokens are valid: false, expires at: 1757230782675
+[debug] [2025-09-08T15:13:18.812Z] > refreshing access token with scopes: []
+[debug] [2025-09-08T15:13:18.812Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-08T15:13:18.812Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T15:13:18.812Z] Checked if tokens are valid: false, expires at: 1757230782675
+[debug] [2025-09-08T15:13:18.812Z] Checked if tokens are valid: false, expires at: 1757230782675
+[debug] [2025-09-08T15:13:18.812Z] > refreshing access token with scopes: []
+[debug] [2025-09-08T15:13:18.812Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-08T15:13:18.812Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T15:13:18.823Z] Checked if tokens are valid: false, expires at: 1757230782675
+[debug] [2025-09-08T15:13:18.823Z] Checked if tokens are valid: false, expires at: 1757230782675
+[debug] [2025-09-08T15:13:18.823Z] > refreshing access token with scopes: []
+[debug] [2025-09-08T15:13:18.823Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-08T15:13:18.823Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T15:13:18.824Z] Checked if tokens are valid: false, expires at: 1757230782675
+[debug] [2025-09-08T15:13:18.824Z] Checked if tokens are valid: false, expires at: 1757230782675
+[debug] [2025-09-08T15:13:18.824Z] > refreshing access token with scopes: []
+[debug] [2025-09-08T15:13:18.824Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-08T15:13:18.824Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T15:13:18.828Z] Checked if tokens are valid: false, expires at: 1757230782675
+[debug] [2025-09-08T15:13:18.828Z] Checked if tokens are valid: false, expires at: 1757230782675
+[debug] [2025-09-08T15:13:18.828Z] > refreshing access token with scopes: []
+[debug] [2025-09-08T15:13:18.829Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-08T15:13:18.829Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T15:13:18.829Z] Checked if tokens are valid: false, expires at: 1757230782675
+[debug] [2025-09-08T15:13:18.830Z] Checked if tokens are valid: false, expires at: 1757230782675
+[debug] [2025-09-08T15:13:18.830Z] > refreshing access token with scopes: []
+[debug] [2025-09-08T15:13:18.830Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-08T15:13:18.830Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T15:13:18.830Z] Checked if tokens are valid: false, expires at: 1757230782675
+[debug] [2025-09-08T15:13:18.830Z] Checked if tokens are valid: false, expires at: 1757230782675
+[debug] [2025-09-08T15:13:18.830Z] > refreshing access token with scopes: []
+[debug] [2025-09-08T15:13:18.830Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-08T15:13:18.831Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T15:13:18.831Z] Checked if tokens are valid: false, expires at: 1757230782675
+[debug] [2025-09-08T15:13:18.831Z] Checked if tokens are valid: false, expires at: 1757230782675
+[debug] [2025-09-08T15:13:18.831Z] > refreshing access token with scopes: []
+[debug] [2025-09-08T15:13:18.831Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-08T15:13:18.831Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T15:13:18.831Z] Checked if tokens are valid: false, expires at: 1757230782675
+[debug] [2025-09-08T15:13:18.831Z] Checked if tokens are valid: false, expires at: 1757230782675
+[debug] [2025-09-08T15:13:18.832Z] > refreshing access token with scopes: []
+[debug] [2025-09-08T15:13:18.832Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-08T15:13:18.832Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T15:13:18.832Z] Checked if tokens are valid: false, expires at: 1757230782675
+[debug] [2025-09-08T15:13:18.832Z] Checked if tokens are valid: false, expires at: 1757230782675
+[debug] [2025-09-08T15:13:18.832Z] > refreshing access token with scopes: []
+[debug] [2025-09-08T15:13:18.832Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-08T15:13:18.832Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T15:13:18.833Z] Checked if tokens are valid: false, expires at: 1757230782675
+[debug] [2025-09-08T15:13:18.833Z] Checked if tokens are valid: false, expires at: 1757230782675
+[debug] [2025-09-08T15:13:18.833Z] > refreshing access token with scopes: []
+[debug] [2025-09-08T15:13:18.833Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-08T15:13:18.833Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T15:13:18.833Z] Checked if tokens are valid: false, expires at: 1757230782675
+[debug] [2025-09-08T15:13:18.833Z] Checked if tokens are valid: false, expires at: 1757230782675
+[debug] [2025-09-08T15:13:18.833Z] > refreshing access token with scopes: []
+[debug] [2025-09-08T15:13:18.833Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-08T15:13:18.833Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T15:13:19.049Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-08T15:13:19.049Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T15:13:19.069Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-09-08T15:13:19.069Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-08T15:13:19.071Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-08T15:13:19.071Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T15:13:19.089Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-09-08T15:13:19.089Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-08T15:13:19.091Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-08T15:13:19.091Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T15:13:19.101Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com [none]
+[debug] [2025-09-08T15:13:19.101Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-08T15:13:19.106Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-08T15:13:19.106Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T15:13:19.113Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com [none]
+[debug] [2025-09-08T15:13:19.113Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-08T15:13:19.114Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-08T15:13:19.114Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T15:13:19.127Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com [none]
+[debug] [2025-09-08T15:13:19.127Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-08T15:13:19.129Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-08T15:13:19.129Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T15:13:19.139Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com [none]
+[debug] [2025-09-08T15:13:19.139Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-08T15:13:19.140Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-08T15:13:19.140Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T15:13:19.150Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com [none]
+[debug] [2025-09-08T15:13:19.150Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-08T15:13:19.150Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-08T15:13:19.150Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T15:13:19.163Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ [none]
+[debug] [2025-09-08T15:13:19.163Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-08T15:13:19.165Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-08T15:13:19.165Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T15:13:19.175Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ [none]
+[debug] [2025-09-08T15:13:19.175Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-08T15:13:19.176Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-08T15:13:19.176Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T15:13:19.188Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com [none]
+[debug] [2025-09-08T15:13:19.188Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-08T15:13:19.190Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-08T15:13:19.190Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T15:13:19.201Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com [none]
+[debug] [2025-09-08T15:13:19.201Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-08T15:13:19.205Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-08T15:13:19.205Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T15:13:19.214Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-09-08T15:13:19.214Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-08T15:13:19.215Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-08T15:13:19.215Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T15:13:19.234Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ [none]
+[debug] [2025-09-08T15:13:19.234Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-08T15:13:19.240Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-08T15:13:19.240Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T15:13:19.252Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com [none]
+[debug] [2025-09-08T15:13:19.252Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-08T15:13:19.253Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-08T15:13:19.253Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T15:13:19.265Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com [none]
+[debug] [2025-09-08T15:13:19.265Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-08T15:13:20.123Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com 403
+[debug] [2025-09-08T15:13:20.123Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com [omitted]
+[debug] [2025-09-08T15:13:20.164Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com 403
+[debug] [2025-09-08T15:13:20.164Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com [omitted]
+[debug] [2025-09-08T15:13:20.193Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com 403
+[debug] [2025-09-08T15:13:20.194Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com [omitted]
+[debug] [2025-09-08T15:13:20.205Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-09-08T15:13:20.206Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-09-08T15:13:20.206Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-09-08T15:13:20.206Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-09-08T15:13:20.213Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com 200
+[debug] [2025-09-08T15:13:20.213Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com [omitted]
+[debug] [2025-09-08T15:13:20.225Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com 200
+[debug] [2025-09-08T15:13:20.225Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com [omitted]
+[debug] [2025-09-08T15:13:20.226Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com 200
+[debug] [2025-09-08T15:13:20.226Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2025-09-08T15:13:20.266Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com 200
+[debug] [2025-09-08T15:13:20.266Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2025-09-08T15:13:20.266Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com 200
+[debug] [2025-09-08T15:13:20.266Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2025-09-08T15:13:20.285Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-09-08T15:13:20.285Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-09-08T15:13:20.292Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com 200
+[debug] [2025-09-08T15:13:20.292Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com [omitted]
+[debug] [2025-09-08T15:13:20.429Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ 200
+[debug] [2025-09-08T15:13:20.429Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ [omitted]
+[debug] [2025-09-08T15:13:20.433Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-09-08T15:13:20.434Z] > authorizing via signed-in user (aredesrafael@gmail.com)
+[debug] [2025-09-08T15:13:20.435Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ 200
+[debug] [2025-09-08T15:13:20.435Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ [omitted]
+[debug] [2025-09-08T15:13:20.464Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ 200
+[debug] [2025-09-08T15:13:20.464Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ [omitted]
+[debug] [2025-09-08T15:13:20.466Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-09-08T15:13:20.466Z] > authorizing via signed-in user (aredesrafael@gmail.com)
+[debug] [2025-09-08T19:26:34.385Z] Checked if tokens are valid: false, expires at: 1757347998253
+[debug] [2025-09-08T19:26:34.387Z] Checked if tokens are valid: false, expires at: 1757347998253
+[debug] [2025-09-08T19:26:34.387Z] > refreshing access token with scopes: []
+[debug] [2025-09-08T19:26:34.388Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-08T19:26:34.388Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T19:26:34.402Z] Checked if tokens are valid: false, expires at: 1757347998253
+[debug] [2025-09-08T19:26:34.402Z] Checked if tokens are valid: false, expires at: 1757347998253
+[debug] [2025-09-08T19:26:34.402Z] > refreshing access token with scopes: []
+[debug] [2025-09-08T19:26:34.403Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-08T19:26:34.403Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T19:26:34.404Z] Checked if tokens are valid: false, expires at: 1757347998253
+[debug] [2025-09-08T19:26:34.405Z] Checked if tokens are valid: false, expires at: 1757347998253
+[debug] [2025-09-08T19:26:34.405Z] > refreshing access token with scopes: []
+[debug] [2025-09-08T19:26:34.405Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-08T19:26:34.405Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T19:26:34.405Z] Checked if tokens are valid: false, expires at: 1757347998253
+[debug] [2025-09-08T19:26:34.406Z] Checked if tokens are valid: false, expires at: 1757347998253
+[debug] [2025-09-08T19:26:34.406Z] > refreshing access token with scopes: []
+[debug] [2025-09-08T19:26:34.406Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-08T19:26:34.406Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T19:26:34.408Z] Checked if tokens are valid: false, expires at: 1757347998253
+[debug] [2025-09-08T19:26:34.408Z] Checked if tokens are valid: false, expires at: 1757347998253
+[debug] [2025-09-08T19:26:34.408Z] > refreshing access token with scopes: []
+[debug] [2025-09-08T19:26:34.408Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-08T19:26:34.408Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T19:26:34.421Z] Checked if tokens are valid: false, expires at: 1757347998253
+[debug] [2025-09-08T19:26:34.421Z] Checked if tokens are valid: false, expires at: 1757347998253
+[debug] [2025-09-08T19:26:34.421Z] > refreshing access token with scopes: []
+[debug] [2025-09-08T19:26:34.421Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-08T19:26:34.421Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T19:26:34.421Z] Checked if tokens are valid: false, expires at: 1757347998253
+[debug] [2025-09-08T19:26:34.422Z] Checked if tokens are valid: false, expires at: 1757347998253
+[debug] [2025-09-08T19:26:34.422Z] > refreshing access token with scopes: []
+[debug] [2025-09-08T19:26:34.422Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-08T19:26:34.422Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T19:26:34.422Z] Checked if tokens are valid: false, expires at: 1757347998253
+[debug] [2025-09-08T19:26:34.422Z] Checked if tokens are valid: false, expires at: 1757347998253
+[debug] [2025-09-08T19:26:34.422Z] > refreshing access token with scopes: []
+[debug] [2025-09-08T19:26:34.422Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-08T19:26:34.422Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T19:26:34.423Z] Checked if tokens are valid: false, expires at: 1757347998253
+[debug] [2025-09-08T19:26:34.423Z] Checked if tokens are valid: false, expires at: 1757347998253
+[debug] [2025-09-08T19:26:34.423Z] > refreshing access token with scopes: []
+[debug] [2025-09-08T19:26:34.423Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-08T19:26:34.423Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T19:26:34.423Z] Checked if tokens are valid: false, expires at: 1757347998253
+[debug] [2025-09-08T19:26:34.423Z] Checked if tokens are valid: false, expires at: 1757347998253
+[debug] [2025-09-08T19:26:34.423Z] > refreshing access token with scopes: []
+[debug] [2025-09-08T19:26:34.423Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-08T19:26:34.423Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T19:26:34.424Z] Checked if tokens are valid: false, expires at: 1757347998253
+[debug] [2025-09-08T19:26:34.424Z] Checked if tokens are valid: false, expires at: 1757347998253
+[debug] [2025-09-08T19:26:34.424Z] > refreshing access token with scopes: []
+[debug] [2025-09-08T19:26:34.424Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-08T19:26:34.424Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T19:26:34.424Z] Checked if tokens are valid: false, expires at: 1757347998253
+[debug] [2025-09-08T19:26:34.424Z] Checked if tokens are valid: false, expires at: 1757347998253
+[debug] [2025-09-08T19:26:34.424Z] > refreshing access token with scopes: []
+[debug] [2025-09-08T19:26:34.424Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-08T19:26:34.424Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T19:26:34.425Z] Checked if tokens are valid: false, expires at: 1757347998253
+[debug] [2025-09-08T19:26:34.425Z] Checked if tokens are valid: false, expires at: 1757347998253
+[debug] [2025-09-08T19:26:34.425Z] > refreshing access token with scopes: []
+[debug] [2025-09-08T19:26:34.425Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-08T19:26:34.425Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T19:26:34.425Z] Checked if tokens are valid: false, expires at: 1757347998253
+[debug] [2025-09-08T19:26:34.425Z] Checked if tokens are valid: false, expires at: 1757347998253
+[debug] [2025-09-08T19:26:34.425Z] > refreshing access token with scopes: []
+[debug] [2025-09-08T19:26:34.425Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-08T19:26:34.425Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T19:26:34.425Z] Checked if tokens are valid: false, expires at: 1757347998253
+[debug] [2025-09-08T19:26:34.425Z] Checked if tokens are valid: false, expires at: 1757347998253
+[debug] [2025-09-08T19:26:34.425Z] > refreshing access token with scopes: []
+[debug] [2025-09-08T19:26:34.425Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-08T19:26:34.425Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T19:26:35.001Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-08T19:26:35.001Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T19:26:35.024Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-09-08T19:26:35.024Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-08T19:26:35.027Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-08T19:26:35.027Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T19:26:35.042Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com [none]
+[debug] [2025-09-08T19:26:35.042Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-08T19:26:35.044Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-08T19:26:35.044Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T19:26:35.055Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com [none]
+[debug] [2025-09-08T19:26:35.055Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-08T19:26:35.056Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-08T19:26:35.056Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T19:26:35.068Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com [none]
+[debug] [2025-09-08T19:26:35.068Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-08T19:26:35.069Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-08T19:26:35.069Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T19:26:35.080Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ [none]
+[debug] [2025-09-08T19:26:35.080Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-08T19:26:35.081Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-08T19:26:35.081Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T19:26:35.095Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ [none]
+[debug] [2025-09-08T19:26:35.095Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-08T19:26:35.096Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-08T19:26:35.096Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T19:26:35.105Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com [none]
+[debug] [2025-09-08T19:26:35.105Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-08T19:26:35.106Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-08T19:26:35.106Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T19:26:35.118Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-09-08T19:26:35.118Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-08T19:26:35.119Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-08T19:26:35.120Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T19:26:35.129Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com [none]
+[debug] [2025-09-08T19:26:35.129Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-08T19:26:35.130Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-08T19:26:35.130Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T19:26:35.140Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com [none]
+[debug] [2025-09-08T19:26:35.140Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-08T19:26:35.141Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-08T19:26:35.141Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T19:26:35.152Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com [none]
+[debug] [2025-09-08T19:26:35.152Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-08T19:26:35.153Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-08T19:26:35.153Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T19:26:35.163Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ [none]
+[debug] [2025-09-08T19:26:35.163Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-08T19:26:35.164Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-08T19:26:35.164Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T19:26:35.176Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com [none]
+[debug] [2025-09-08T19:26:35.176Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-08T19:26:35.176Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-08T19:26:35.176Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T19:26:35.186Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com [none]
+[debug] [2025-09-08T19:26:35.186Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-08T19:26:35.187Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-08T19:26:35.187Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-08T19:26:35.197Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-09-08T19:26:35.197Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-08T19:26:36.344Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com 403
+[debug] [2025-09-08T19:26:36.345Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com [omitted]
+[debug] [2025-09-08T19:26:36.452Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com 200
+[debug] [2025-09-08T19:26:36.453Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2025-09-08T19:26:36.542Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-09-08T19:26:36.542Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-09-08T19:26:36.561Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com 200
+[debug] [2025-09-08T19:26:36.562Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com [omitted]
+[debug] [2025-09-08T19:26:36.594Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-09-08T19:26:36.594Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-09-08T19:26:36.769Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ 200
+[debug] [2025-09-08T19:26:36.769Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ [omitted]
+[debug] [2025-09-08T19:26:37.094Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com 403
+[debug] [2025-09-08T19:26:37.094Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com [omitted]
+[debug] [2025-09-08T19:26:37.118Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com 403
+[debug] [2025-09-08T19:26:37.118Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com [omitted]
+[debug] [2025-09-08T19:26:37.310Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com 200
+[debug] [2025-09-08T19:26:37.310Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2025-09-08T19:26:37.311Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com 200
+[debug] [2025-09-08T19:26:37.311Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2025-09-08T19:26:37.428Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-09-08T19:26:37.429Z] > authorizing via signed-in user (aredesrafael@gmail.com)
+[debug] [2025-09-08T19:26:37.434Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-09-08T19:26:37.434Z] > authorizing via signed-in user (aredesrafael@gmail.com)
+[debug] [2025-09-08T19:26:37.436Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com 200
+[debug] [2025-09-08T19:26:37.436Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com [omitted]
+[debug] [2025-09-08T19:26:37.436Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com 200
+[debug] [2025-09-08T19:26:37.436Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com [omitted]
+[debug] [2025-09-08T19:26:37.620Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-09-08T19:26:37.620Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-09-08T19:26:37.860Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ 200
+[debug] [2025-09-08T19:26:37.860Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ [omitted]
+[debug] [2025-09-08T19:26:37.892Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ 200
+[debug] [2025-09-08T19:26:37.892Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ [omitted]
+[debug] [2025-09-08T20:02:03.645Z] Checked if tokens are valid: true, expires at: 1757363194187
+[debug] [2025-09-08T20:02:03.648Z] Checked if tokens are valid: true, expires at: 1757363194187
+[debug] [2025-09-08T20:02:03.648Z] Checked if tokens are valid: true, expires at: 1757363194187
+[debug] [2025-09-08T20:02:03.648Z] Checked if tokens are valid: true, expires at: 1757363194187
+[debug] [2025-09-08T20:02:03.648Z] Checked if tokens are valid: true, expires at: 1757363194187
+[debug] [2025-09-08T20:02:03.648Z] Checked if tokens are valid: true, expires at: 1757363194187
+[debug] [2025-09-08T20:02:03.648Z] Checked if tokens are valid: true, expires at: 1757363194187
+[debug] [2025-09-08T20:02:03.648Z] Checked if tokens are valid: true, expires at: 1757363194187
+[debug] [2025-09-08T20:02:03.648Z] Checked if tokens are valid: true, expires at: 1757363194187
+[debug] [2025-09-08T20:02:03.648Z] Checked if tokens are valid: true, expires at: 1757363194187
+[debug] [2025-09-08T20:02:03.649Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ [none]
+[debug] [2025-09-08T20:02:03.649Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-08T20:02:03.678Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com [none]
+[debug] [2025-09-08T20:02:03.678Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-08T20:02:03.679Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com [none]
+[debug] [2025-09-08T20:02:03.679Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-08T20:02:03.680Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-09-08T20:02:03.680Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-08T20:02:03.680Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com [none]
+[debug] [2025-09-08T20:02:03.680Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-08T20:02:03.712Z] Checked if tokens are valid: true, expires at: 1757363194187
+[debug] [2025-09-08T20:02:03.712Z] Checked if tokens are valid: true, expires at: 1757363194187
+[debug] [2025-09-08T20:02:03.712Z] Checked if tokens are valid: true, expires at: 1757363194187
+[debug] [2025-09-08T20:02:03.712Z] Checked if tokens are valid: true, expires at: 1757363194187
+[debug] [2025-09-08T20:02:03.712Z] Checked if tokens are valid: true, expires at: 1757363194187
+[debug] [2025-09-08T20:02:03.712Z] Checked if tokens are valid: true, expires at: 1757363194187
+[debug] [2025-09-08T20:02:03.713Z] Checked if tokens are valid: true, expires at: 1757363194187
+[debug] [2025-09-08T20:02:03.713Z] Checked if tokens are valid: true, expires at: 1757363194187
+[debug] [2025-09-08T20:02:03.713Z] Checked if tokens are valid: true, expires at: 1757363194187
+[debug] [2025-09-08T20:02:03.713Z] Checked if tokens are valid: true, expires at: 1757363194187
+[debug] [2025-09-08T20:02:03.713Z] Checked if tokens are valid: true, expires at: 1757363194187
+[debug] [2025-09-08T20:02:03.713Z] Checked if tokens are valid: true, expires at: 1757363194187
+[debug] [2025-09-08T20:02:03.713Z] Checked if tokens are valid: true, expires at: 1757363194187
+[debug] [2025-09-08T20:02:03.713Z] Checked if tokens are valid: true, expires at: 1757363194187
+[debug] [2025-09-08T20:02:03.713Z] Checked if tokens are valid: true, expires at: 1757363194187
+[debug] [2025-09-08T20:02:03.713Z] Checked if tokens are valid: true, expires at: 1757363194187
+[debug] [2025-09-08T20:02:03.713Z] Checked if tokens are valid: true, expires at: 1757363194187
+[debug] [2025-09-08T20:02:03.713Z] Checked if tokens are valid: true, expires at: 1757363194187
+[debug] [2025-09-08T20:02:03.713Z] Checked if tokens are valid: true, expires at: 1757363194187
+[debug] [2025-09-08T20:02:03.713Z] Checked if tokens are valid: true, expires at: 1757363194187
+[debug] [2025-09-08T20:02:03.713Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ [none]
+[debug] [2025-09-08T20:02:03.713Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-08T20:02:03.714Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com [none]
+[debug] [2025-09-08T20:02:03.714Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-08T20:02:03.714Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com [none]
+[debug] [2025-09-08T20:02:03.714Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-08T20:02:03.715Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-09-08T20:02:03.715Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-08T20:02:03.715Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com [none]
+[debug] [2025-09-08T20:02:03.715Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-08T20:02:03.716Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ [none]
+[debug] [2025-09-08T20:02:03.716Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-08T20:02:03.716Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com [none]
+[debug] [2025-09-08T20:02:03.716Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-08T20:02:03.716Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com [none]
+[debug] [2025-09-08T20:02:03.716Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-08T20:02:03.717Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-09-08T20:02:03.717Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-08T20:02:03.717Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com [none]
+[debug] [2025-09-08T20:02:03.717Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com x-goog-quota-user=projects/glicotrack-41d22
+[debug] [2025-09-08T20:02:04.835Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com 403
+[debug] [2025-09-08T20:02:04.835Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com [omitted]
+[debug] [2025-09-08T20:02:04.869Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com 403
+[debug] [2025-09-08T20:02:04.869Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com [omitted]
+[debug] [2025-09-08T20:02:04.913Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com 403
+[debug] [2025-09-08T20:02:04.913Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseio.com [omitted]
+[debug] [2025-09-08T20:02:05.014Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com 200
+[debug] [2025-09-08T20:02:05.014Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2025-09-08T20:02:05.015Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com 200
+[debug] [2025-09-08T20:02:05.015Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com [omitted]
+[debug] [2025-09-08T20:02:05.026Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-09-08T20:02:05.026Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-09-08T20:02:05.027Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com 200
+[debug] [2025-09-08T20:02:05.027Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2025-09-08T20:02:05.028Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com 200
+[debug] [2025-09-08T20:02:05.028Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com [omitted]
+[debug] [2025-09-08T20:02:05.054Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-09-08T20:02:05.054Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-09-08T20:02:05.057Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com 200
+[debug] [2025-09-08T20:02:05.057Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasecrashlytics.googleapis.com [omitted]
+[debug] [2025-09-08T20:02:05.067Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-09-08T20:02:05.067Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-09-08T20:02:05.070Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com 200
+[debug] [2025-09-08T20:02:05.070Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2025-09-08T20:02:05.212Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ 200
+[debug] [2025-09-08T20:02:05.213Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ [omitted]
+[debug] [2025-09-08T20:02:05.216Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-09-08T20:02:05.217Z] > authorizing via signed-in user (aredesrafael@gmail.com)
+[debug] [2025-09-08T20:02:05.218Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ 200
+[debug] [2025-09-08T20:02:05.218Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ [omitted]
+[debug] [2025-09-08T20:02:05.288Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ 200
+[debug] [2025-09-08T20:02:05.288Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/glicotrack-41d22/services/ [omitted]
+[debug] [2025-09-08T20:02:05.293Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-09-08T20:02:05.294Z] > authorizing via signed-in user (aredesrafael@gmail.com)
