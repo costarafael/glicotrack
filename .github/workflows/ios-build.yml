@@ -64,7 +64,7 @@ jobs:
           -workspace GlicoTrack.xcworkspace \
           -scheme GlicoTrack \
           -configuration Debug \
-          -destination 'platform=iOS Simulator,name=iPhone 14' \
+          -destination 'platform=iOS Simulator,OS=latest' \
           -derivedDataPath build \
           -allowProvisioningUpdates \
           CODE_SIGNING_ALLOWED=NO \
