@@ -9,7 +9,7 @@ on:
 
 jobs:
   build-ios:
-    name: Build iOS App
+    name: Build iOS App (Clean Template)
     runs-on: macos-14 # macOS Sonoma com Xcode 16.2
     
     steps:
@@ -22,90 +22,41 @@ jobs:
         node-version: '18'
         cache: 'npm'
         
-    - name: Clean and Install Dependencies
+    - name: Install Dependencies
       run: |
-        # Complete cleanup for fresh install
-        rm -rf node_modules
-        rm -rf package-lock.json
+        echo "=== Installing Node.js dependencies ==="
+        rm -rf node_modules package-lock.json
         npm install --legacy-peer-deps
         
-    - name: Clean and Install CocoaPods
-      run: |
-        cd ios
-        # Complete cleanup of iOS build artifacts
-        rm -rf Pods
-        rm -rf Podfile.lock
-        rm -rf build
-        rm -rf ~/Library/Developer/Xcode/DerivedData/GlicoTrack-* || true
-        
-        # Verify node_modules/react-native exists before pod install
-        echo "=== Pre-install verification ==="
-        ls -la ../node_modules/react-native/React/ || echo "❌ React Native React directory missing"
-        ls -la ../node_modules/react-native/Libraries/ || echo "❌ React Native Libraries directory missing"
-        
-        # Fresh install with verbose logging
-        echo "=== Starting CocoaPods installation ==="
-        pod install --repo-update --verbose
-        
-        echo "=== Post-install verification ==="
-        echo "Checking if RCTBridge.h exists after pod install:"
-        find ../node_modules/react-native -name "RCTBridge.h" -type f | head -3 || echo "❌ RCTBridge.h not found in node_modules"
-        find Pods -name "RCTBridge.h" -type f | head -3 || echo "❌ RCTBridge.h not found in Pods"
-      
     - name: Select Xcode Version
       run: sudo xcode-select -s /Applications/Xcode_16.2.app/Contents/Developer
       
-    - name: Show Xcode Version
-      run: xcodebuild -version
-      
-    - name: List Available Simulators  
-      run: xcrun simctl list devices available
-      
-    - name: Cache CocoaPods
-      uses: actions/cache@v4
-      with:
-        path: ios/Pods
-        key: ${{ runner.os }}-pods-${{ hashFiles('ios/Podfile.lock') }}
-        restore-keys: |
-          ${{ runner.os }}-pods-
-          
-    - name: Verify React Native Headers
+    - name: Show Xcode and Environment Info
+      run: |
+        echo "=== Build Environment ==="
+        xcodebuild -version
+        echo "Node.js: $(node --version)"
+        echo "npm: $(npm --version)"
+        
+    - name: Install CocoaPods Dependencies
       run: |
         cd ios
-        echo "=== Verifying React Native Headers ==="
+        echo "=== Installing CocoaPods dependencies ==="
         
-        # Check critical paths
-        echo "1. Checking node_modules/react-native structure:"
-        ls -la ../node_modules/react-native/ || echo "react-native not found"
+        # Clean previous installation
+        rm -rf Pods Podfile.lock build
+        rm -rf ~/Library/Developer/Xcode/DerivedData/GlicoTrack-* || true
         
-        echo "2. Checking for RCTBridge.h in expected locations:"
-        find ../node_modules/react-native -name "RCTBridge.h" -type f | head -5 || echo "RCTBridge.h not found in node_modules"
-        find Pods -name "RCTBridge.h" -type f | head -5 || echo "RCTBridge.h not found in Pods"
+        # Install with clean state
+        pod install --repo-update --verbose
         
-        echo "3. Checking React directory structure:"
-        ls -la ../node_modules/react-native/React/ || echo "React directory not found"
-        ls -la ../node_modules/react-native/Libraries/ || echo "Libraries directory not found"
-        
-        echo "4. Verifying Podfile.lock contains React entries:"
-        grep -i react Podfile.lock | head -3 || echo "No React entries in Podfile.lock"
-        
-    - name: Clean Build Directory
-      run: |
-        cd ios
-        rm -rf build/
-        rm -rf ~/Library/Developer/Xcode/DerivedData/GlicoTrack-*
-        
-    - name: Fix React Native Headers Issue
-      run: |
-        cd ios
-        # Add React Native headers to project search paths
-        sed -i '' 's|"$(SRCROOT)/../node_modules/react-native/React",|"$(SRCROOT)/../node_modules/react-native/React", "$(SRCROOT)/../node_modules/react-native/Libraries",|g' GlicoTrack.xcodeproj/project.pbxproj
+        echo "=== Verifying installation ==="
+        ls -la Pods/ | head -10
         
     - name: Build iOS App (Debug)
       run: |
         cd ios
-        # Use the most reliable approach: build for any available simulator
-        echo "Building for iOS Simulator (any available device)"
+        echo "=== Building iOS App for Simulator ==="
         
         xcodebuild \
           -workspace GlicoTrack.xcworkspace \
@@ -116,8 +67,6 @@ jobs:
           -allowProvisioningUpdates \
           CODE_SIGNING_ALLOWED=NO \
           ONLY_ACTIVE_ARCH=NO \
-          SWIFT_ENABLE_EXPLICIT_MODULES=NO \
-          CLANG_ENABLE_MODULES=YES \
           clean build
           
     - name: Build iOS App for Device (Release - Optional)

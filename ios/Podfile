@@ -5,22 +5,21 @@ require Pod::Executable.execute_command('node', ['-p',
     {paths: [process.argv[1]]},
   )', __dir__]).strip
 
-# CRÍTICO: Configurações Firebase
+# Firebase configuration
 $RNFirebaseAsStaticFramework = true
 
 platform :ios, '15.1'
 install! 'cocoapods', :deterministic_uuids => false
 
-# Preparação do projeto React Native
 prepare_react_native_project!
 
 target 'GlicoTrack' do
   config = use_native_modules!
 
-  # CRÍTICO: Use frameworks estáticos para Firebase
+  # Use static frameworks for Firebase
   use_frameworks! :linkage => :static
 
-  # Firebase com modular headers (SIMPLIFICADO)
+  # Firebase pods with modular headers
   pod 'Firebase', :modular_headers => true
   pod 'FirebaseCore', :modular_headers => true
   pod 'GoogleUtilities', :modular_headers => true
@@ -40,68 +39,15 @@ target 'GlicoTrack' do
       :mac_catalyst_enabled => false
     )
     
-    # XCODE 16.4 FIX: Add React Native headers from node_modules to main app target
-    installer.aggregate_targets.each do |aggregate_target|
-      aggregate_target.user_project.targets.each do |target|
-        if target.name == 'GlicoTrack'
-          target.build_configurations.each do |config|
-            # Use union operator to avoid duplicates and ensure paths are always present
-            config.build_settings['HEADER_SEARCH_PATHS'] = (config.build_settings['HEADER_SEARCH_PATHS'] || []) | [
-              '$(SRCROOT)/../node_modules/react-native/React',
-              '$(SRCROOT)/../node_modules/react-native/React/Base',
-              '$(SRCROOT)/../node_modules/react-native',
-              '$(SRCROOT)/../node_modules/react-native/Libraries'
-            ]
-          end
-        end
-      end
-    end
-
-    # XCODE 16.4 COMPATIBILITY FIXES
+    # Basic compatibility fixes for all targets
     installer.pods_project.targets.each do |target|
       target.build_configurations.each do |config|
-        # --- Configurações Gerais para TODOS os targets ---
         config.build_settings['CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES'] = 'YES'
         config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "arm64"
         config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'NO'
-        
-        # XCODE 16.4 FIX: Desabilitar módulos explícitos que causam problema FLT_MAX/FLT_MIN
-        config.build_settings['SWIFT_ENABLE_EXPLICIT_MODULES'] = 'NO'
-        config.build_settings['CLANG_ENABLE_MODULES'] = 'YES'
-        config.build_settings['CLANG_MODULES_AUTOLINK'] = 'YES'
-        
-        # XCODE 16.4 FIX: Definir constantes float no preprocessor
-        config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] ||= []
-        config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] << 'FLT_MAX=3.40282347e+38F'
-        config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] << 'FLT_MIN=1.17549435e-38F'
-        
-        # XCODE 16.4 FIX: Force include float.h
-        config.build_settings['OTHER_CFLAGS'] ||= []
-        config.build_settings['OTHER_CFLAGS'] << '-include'
-        config.build_settings['OTHER_CFLAGS'] << 'float.h'
       end
 
-      # --- Configurações Específicas para o target 'React-Core' ---
-      if target.name == 'React-Core'
-        target.build_configurations.each do |config|
-          config.build_settings['DEFINES_MODULE'] = 'NO'
-          
-          # NOVO FIX: Corrige os Header Search Paths para evitar a inclusão de arquivos do Android
-          config.build_settings['HEADER_SEARCH_PATHS'] = [
-            "$(PODS_ROOT)/React-Core/ReactCommon",
-            "$(PODS_ROOT)/React-Core/ReactCommon/react/renderer/components/view/platform/cxx",
-            "$(PODS_ROOT)/React-Core/ReactCommon/react/renderer/core",
-            "$(PODS_ROOT)/React-Core/ReactCommon/react/renderer/debug",
-            "$(PODS_ROOT)/React-Core/ReactCommon/react/renderer/graphics",
-            "$(PODS_ROOT)/React-Core/ReactCommon/react/renderer/mounting",
-            "$(PODS_ROOT)/React-Core/ReactCommon/react/renderer/telemetry",
-            "$(PODS_ROOT)/React-Core/ReactCommon/react/renderer/uimanager",
-            "$(PODS_ROOT)/React-Core/ReactCommon/react/runtime/platform/cxx",
-          ]
-        end
-      end
-
-      # --- Configurações Específicas para targets do tipo 'bundle' ---
+      # Code signing for bundle targets
       if target.respond_to?(:product_type) && target.product_type == "com.apple.product-type.bundle"
         target.build_configurations.each do |config|
           config.build_settings['CODE_SIGNING_ALLOWED'] = 'NO'
