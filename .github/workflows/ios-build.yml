@@ -22,16 +22,21 @@ jobs:
         node-version: '18'
         cache: 'npm'
         
-    - name: Install Dependencies
+    - name: Clean and Install Dependencies
       run: |
+        # Complete cleanup for fresh install
+        rm -rf node_modules
+        rm -rf package-lock.json
         npm install --legacy-peer-deps
         
     - name: Clean and Install CocoaPods
       run: |
         cd ios
-        # Clean previous installation
+        # Complete cleanup of iOS build artifacts
         rm -rf Pods
         rm -rf Podfile.lock
+        rm -rf build
+        rm -rf ~/Library/Developer/Xcode/DerivedData/GlicoTrack-* || true
         # Fresh install with verbose logging
         pod install --repo-update --verbose
       
@@ -55,9 +60,22 @@ jobs:
     - name: Verify React Native Headers
       run: |
         cd ios
-        echo "Checking for React Native headers..."
-        find Pods -name "RCTBridge.h" | head -5 || echo "RCTBridge.h not found in Pods"
-        find ../node_modules/react-native -name "RCTBridge.h" | head -5 || echo "RCTBridge.h not found in node_modules"
+        echo "=== Verifying React Native Headers ==="
+        
+        # Check critical paths
+        echo "1. Checking node_modules/react-native structure:"
+        ls -la ../node_modules/react-native/ || echo "react-native not found"
+        
+        echo "2. Checking for RCTBridge.h in expected locations:"
+        find ../node_modules/react-native -name "RCTBridge.h" -type f | head -5 || echo "RCTBridge.h not found in node_modules"
+        find Pods -name "RCTBridge.h" -type f | head -5 || echo "RCTBridge.h not found in Pods"
+        
+        echo "3. Checking React directory structure:"
+        ls -la ../node_modules/react-native/React/ || echo "React directory not found"
+        ls -la ../node_modules/react-native/Libraries/ || echo "Libraries directory not found"
+        
+        echo "4. Verifying Podfile.lock contains React entries:"
+        grep -i react Podfile.lock | head -3 || echo "No React entries in Podfile.lock"
         
     - name: Clean Build Directory
       run: |
