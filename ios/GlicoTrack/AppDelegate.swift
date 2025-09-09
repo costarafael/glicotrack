@@ -1,6 +1,5 @@
 import UIKit
 import React
-import FirebaseCore
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -11,9 +10,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     _ application: UIApplication,
     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil
   ) -> Bool {
-    
-    // Configure Firebase
-    FirebaseApp.configure()
     
     // Initialize React Native Bridge
     bridge = RCTBridge(delegate: self, launchOptions: launchOptions)
