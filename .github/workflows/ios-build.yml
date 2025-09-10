@@ -5,313 +5,136 @@ on:
     branches: [ main, develop ]
   pull_request:
     branches: [ main ]
-  workflow_dispatch: # Permite executar manualmente
+  workflow_dispatch:
 
 jobs:
   build-ios:
-    name: Build iOS App (Clean Template)
-    runs-on: macos-14 # macOS Sonoma com Xcode 16.2
-    
+    name: Build iOS App
+    runs-on: macos-14
+
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v4
-      
+
     - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
         node-version: '18'
-        cache: 'npm'
         
+    - name: Cache npm dependencies
+      uses: actions/cache@v4
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+
     - name: Install Dependencies
-      run: |
-        echo "=== Installing Node.js dependencies ==="
-        rm -rf node_modules package-lock.json
-        npm install --legacy-peer-deps
-        
+      run: npm ci # Usa package-lock.json para uma instalação rápida e previsível
+
     - name: Select Xcode Version
-      run: sudo xcode-select -s /Applications/Xcode_16.2.app/Contents/Developer
-      
+      uses: maxim-lobanov/setup-xcode@v1
+      with:
+        xcode-version: '16.2'
+
     - name: Show Xcode and Environment Info
       run: |
         echo "=== Build Environment ==="
         xcodebuild -version
         echo "Node.js: $(node --version)"
         echo "npm: $(npm --version)"
-        
+
+    - name: Cache CocoaPods
+      uses: actions/cache@v4
+      with:
+        path: ios/Pods
+        key: ${{ runner.os }}-pods-${{ hashFiles('**/Podfile.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-pods-
+
     - name: Install CocoaPods Dependencies
       run: |
         cd ios
         echo "=== Installing CocoaPods dependencies ==="
-        
-        # Complete cleanup first
-        rm -rf Pods Podfile.lock build
+        # Com o cache, a instalação fica muito mais rápida.
+        # A limpeza completa de DerivedData ainda é uma boa prática.
         rm -rf ~/Library/Developer/Xcode/DerivedData/GlicoTrack-* || true
         
-        # Clean CocoaPods cache for problematic pods
-        pod cache clean --all || true
-        
         echo "CocoaPods version: $(pod --version)"
-        echo "Ruby version: $(ruby --version)"
-        echo "Xcode version: $(xcodebuild -version)"
         
-        # Set environment variables for React Native flags
-        export RCT_NEW_ARCH_ENABLED=1
-        export USE_HERMES=1
-        
-        echo "Environment flags:"
-        echo "RCT_NEW_ARCH_ENABLED=$RCT_NEW_ARCH_ENABLED"
-        echo "USE_HERMES=$USE_HERMES"
-        
-        # Enhanced CocoaPods installation with comprehensive error handling
-        echo "=== Starting robust pod install process ==="
-        
-        # Step 1: Update CocoaPods repo first
-        echo "🔄 Updating CocoaPods repository..."
-        pod repo update --verbose || echo "⚠️ Repo update had issues but continuing..."
-        
-        # Step 2: Attempt installation with detailed logging
-        echo "📦 Installing pods with comprehensive logging..."
-        
-        # Try installation with multiple fallback strategies
-        INSTALL_SUCCESS=false
-        
-        # Strategy 1: Standard install
-        echo "🎯 Strategy 1: Standard install with repo update"
-        if pod install --repo-update --verbose > pod_install_full.log 2>&1; then
-          INSTALL_SUCCESS=true
-          echo "✅ Standard install succeeded!"
-        else
-          echo "❌ Standard install failed, trying alternatives..."
-          echo "📋 Last 30 lines of failed install:"
-          tail -30 pod_install_full.log
-        fi
-        
-        # Strategy 2: Clean install if first failed
-        if [ "$INSTALL_SUCCESS" = false ]; then
-          echo "🎯 Strategy 2: Clean install after cache clear"
-          pod cache clean --all
-          rm -rf Pods Podfile.lock
-          
-          if pod install --repo-update --verbose > pod_install_clean.log 2>&1; then
-            INSTALL_SUCCESS=true
-            echo "✅ Clean install succeeded!"
-          else
-            echo "❌ Clean install also failed"
-            echo "📋 Last 30 lines of clean install:"
-            tail -30 pod_install_clean.log
-          fi
-        fi
-        
-        # Strategy 3: Install without repo update as last resort
-        if [ "$INSTALL_SUCCESS" = false ]; then
-          echo "🎯 Strategy 3: Install without repo update"
-          if pod install --verbose > pod_install_no_update.log 2>&1; then
-            INSTALL_SUCCESS=true
-            echo "✅ Install without update succeeded!"
-          else
-            echo "❌ All installation strategies failed!"
-            echo "📋 Final attempt log:"
-            tail -50 pod_install_no_update.log
-          fi
-        fi
-        
-        # Verify installation success
-        if [ "$INSTALL_SUCCESS" = false ]; then
-          echo "💥 CRITICAL: All CocoaPods installation strategies failed!"
-          echo "🔍 Debugging pod environment:"
-          pod --version
-          ruby --version
-          gem list | grep cocoapods
-          exit 1
-        fi
-        
-        echo "=== Installation verification ==="
-        
-        # Check if workspace was created
-        if [ -f "GlicoTrack.xcworkspace/contents.xcworkspacedata" ]; then
-          echo "✅ Workspace: GlicoTrack.xcworkspace created successfully"
-        else
-          echo "❌ Workspace: GlicoTrack.xcworkspace NOT found"
-          ls -la *.xcworkspace 2>/dev/null || echo "No .xcworkspace files found"
-        fi
-        
-        # Check if Podfile.lock was created
-        if [ -f "Podfile.lock" ]; then
-          echo "✅ Podfile.lock: Created successfully"
-          echo "📋 Podfile.lock size: $(wc -l < Podfile.lock) lines"
-        else
-          echo "❌ Podfile.lock: NOT found"
-        fi
-        
-        # Check if Pods directory exists and has content
-        if [ -d "Pods" ]; then
-          echo "✅ Pods directory: Exists with $(ls -1 Pods | wc -l) pods"
-          echo "📦 Critical pods verification:"
-          
-          # Check each critical pod individually
-          for pod in "RNSVG" "RNPermissions" "Firebase" "leveldb-library"; do
-            if [ -d "Pods/$pod" ]; then
-              echo "  ✅ $pod: Found"
-            else
-              echo "  ❌ $pod: MISSING"
-            fi
-          done
-          
-          # Specific leveldb verification
-          if [ -d "Pods/leveldb-library" ]; then
-            echo "🔍 leveldb-library detailed check:"
-            echo "  📁 Directory size: $(du -sh Pods/leveldb-library 2>/dev/null || echo 'Unknown')"
-            echo "  📄 Header files count: $(find Pods/leveldb-library -name "*.h" | wc -l)"
-            
-            # Check critical headers
-            for header in "db/version_set.h" "db/version_edit.h"; do
-              if [ -f "Pods/leveldb-library/$header" ]; then
-                echo "  ✅ $header: Found"
-              else
-                echo "  ❌ $header: MISSING"
-              fi
-            done
-          else
-            echo "💥 CRITICAL: leveldb-library pod is completely missing!"
-          fi
-        else
-          echo "❌ Pods directory: NOT found"
-        fi
-        
-        # Final verification with leveldb focus
-        echo "=== Final Status Check ==="
-        VERIFICATION_FAILED=false
-        
-        if [ ! -f "GlicoTrack.xcworkspace/contents.xcworkspacedata" ]; then
-          echo "❌ Workspace not created"
-          VERIFICATION_FAILED=true
-        fi
-        
-        if [ ! -f "Podfile.lock" ]; then
-          echo "❌ Podfile.lock not created"
-          VERIFICATION_FAILED=true
-        fi
-        
-        if [ ! -d "Pods/leveldb-library" ]; then
-          echo "❌ leveldb-library pod missing"
-          VERIFICATION_FAILED=true
-        fi
-        
-        if [ ! -f "Pods/leveldb-library/db/version_set.h" ]; then
-          echo "❌ Critical leveldb header missing: db/version_set.h"
-          VERIFICATION_FAILED=true
-        fi
-        
-        if [ "$VERIFICATION_FAILED" = true ]; then
-          echo "💥 CRITICAL: CocoaPods installation verification failed!"
-          echo "🔍 Debug information:"
-          echo "📋 Podfile content:"
-          cat Podfile | head -20
-          echo "📋 Available pods:"
-          ls -la Pods/ 2>/dev/null | head -10
-          echo "📋 Podfile.lock snippet:"
-          head -20 Podfile.lock 2>/dev/null || echo "Podfile.lock not found"
-          exit 1
-        else
-          echo "✅ All verifications passed - CocoaPods installation successful!"
-        fi
+        # Instala os pods, atualizando o repositório apenas se necessário.
+        # A flag --repo-update é executada pelo CocoaPods automaticamente se o Podfile.lock estiver desatualizado.
+        pod install --verbose
       env:
         RCT_NEW_ARCH_ENABLED: 1
         USE_HERMES: 1
         
+    - name: Verify Pods Installation
+      run: |
+        cd ios
+        echo "=== Verifying CocoaPods Installation ==="
+        if [ ! -d "Pods/leveldb-library" ]; then
+          echo "❌ Critical pod 'leveldb-library' is missing!"
+          echo "Listing available pods:"
+          ls -l Pods
+          exit 1
+        else
+          echo "✅ Critical pod 'leveldb-library' found."
+          echo "🔍 Checking leveldb headers:"
+          if [ -f "Pods/leveldb-library/db/version_set.h" ]; then
+            echo "  ✅ db/version_set.h exists"
+          else
+            echo "  ❌ db/version_set.h missing"
+          fi
+          if [ -f "Pods/leveldb-library/db/dbformat.h" ]; then
+            echo "  ✅ db/dbformat.h exists" 
+          else
+            echo "  ❌ db/dbformat.h missing"
+          fi
+        fi
+
     - name: Build iOS App (Debug)
       run: |
         cd ios
         echo "=== Building iOS App for Simulator ==="
         
-        # Build with proper error handling and leveldb fixes
-        echo "🔨 Starting iOS build process..."
-        
-        # Build to log file to avoid broken pipe, then show relevant output
+        # O build é direcionado para um arquivo de log para melhor depuração em caso de falha
         if ! xcodebuild \
           -workspace GlicoTrack.xcworkspace \
           -scheme GlicoTrack \
           -configuration Debug \
           -sdk iphonesimulator \
           -derivedDataPath build \
-          -allowProvisioningUpdates \
           CODE_SIGNING_ALLOWED=NO \
-          CODE_SIGNING_REQUIRED=NO \
-          CODE_SIGN_IDENTITY="" \
-          PROVISIONING_PROFILE="" \
-          DEVELOPMENT_TEAM="" \
-          ONLY_ACTIVE_ARCH=NO \
-          CLANG_CXX_LANGUAGE_STANDARD=c++17 \
-          CLANG_CXX_LIBRARY=libc++ \
           clean build > build.log 2>&1; then
           
-          echo "❌ Build failed, showing error details:"
-          echo "=== Last 100 lines of build log ==="
+          echo "❌ Build failed. Displaying last 100 lines of the build log:"
           tail -100 build.log
-          echo "=== Error summary ==="
-          grep -i "error:" build.log | tail -10 || echo "No specific errors found in log"
           exit 1
         else
           echo "✅ Build completed successfully!"
-          echo "📋 Build summary from log:"
-          grep -E "(BUILD SUCCEEDED|warning:|note:)" build.log | tail -20 || echo "No build summary available"
         fi
-          
-    - name: Build iOS App for Device (Release - Optional)
-      if: github.ref == 'refs/heads/main'
-      run: |
-        cd ios
-        # Skip release build for now - requires Apple Developer account setup
-        echo "=== Release Build Skipped ==="
-        echo "To enable release builds, configure APPLE_TEAM_ID secret and uncomment below:"
-        echo "# xcodebuild \\"
-        echo "#   -workspace GlicoTrack.xcworkspace \\"
-        echo "#   -scheme GlicoTrack \\"  
-        echo "#   -configuration Release \\"
-        echo "#   -destination 'generic/platform=iOS' \\"
-        echo "#   -derivedDataPath build \\"
-        echo "#   -allowProvisioningUpdates \\"
-        echo "#   DEVELOPMENT_TEAM=\"\${{ secrets.APPLE_TEAM_ID }}\" \\"
-        echo "#   CODE_SIGN_IDENTITY=\"iPhone Developer\" \\"
-        echo "#   clean archive \\"
-        echo "#   -archivePath build/GlicoTrack.xcarchive"
-          
-    - name: Export IPA (Release - Optional)
-      if: github.ref == 'refs/heads/main'
-      run: |
-        cd ios
-        echo "=== IPA Export Skipped ==="
-        echo "IPA export requires release archive which is currently disabled"
-          
-    - name: Upload Build Artifacts
+
+    - name: Upload Build Artifact
       uses: actions/upload-artifact@v4
-      if: always()
+      if: success()
       with:
-        name: ios-build-artifacts
-        path: |
-          ios/build/Build/Products/Debug-iphonesimulator/TempGlicoTrack.app
+        name: ios-debug-build
+        path: ios/build/Build/Products/Debug-iphonesimulator/TempGlicoTrack.app
         retention-days: 7
-        
-    - name: Upload Build Logs
+
+    - name: Upload Build Logs on Failure
       uses: actions/upload-artifact@v4
       if: failure()
       with:
-        name: build-logs
-        path: |
-          ios/build/Logs
-          ~/Library/Developer/Xcode/DerivedData/**/Logs
-        retention-days: 3
-        
+        name: ios-build-logs
+        path: ios/build.log
+        retention-days: 7
+
     - name: Build Summary
       if: always()
       run: |
         echo "## 📱 iOS Build Summary" >> $GITHUB_STEP_SUMMARY
-        echo "- **Xcode Version:** $(xcodebuild -version | head -n 1)" >> $GITHUB_STEP_SUMMARY
-        echo "- **React Native:** 0.80.2" >> $GITHUB_STEP_SUMMARY
         echo "- **Status:** ${{ job.status }}" >> $GITHUB_STEP_SUMMARY
-        echo "- **Build Configuration:** Debug (Simulator)" >> $GITHUB_STEP_SUMMARY
-        if [ "${{ github.ref }}" == "refs/heads/main" ]; then
-          echo "- **Release Build:** ✅ Attempted" >> $GITHUB_STEP_SUMMARY
-        else
-          echo "- **Release Build:** ⏭️ Skipped (not main branch)" >> $GITHUB_STEP_SUMMARY
-        fi
+        XCODE_VERSION=$(xcodebuild -version | head -n 1)
+        echo "- **Xcode Version:** $XCODE_VERSION" >> $GITHUB_STEP_SUMMARY

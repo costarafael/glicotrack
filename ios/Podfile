@@ -10,6 +10,10 @@ $RNFirebaseAsStaticFramework = true
 
 target 'TempGlicoTrack' do
   config = use_native_modules!
+  
+  # Fix for leveldb-library missing source files issue
+  # Use a maintained fork that includes all necessary source files and headers
+  pod 'leveldb-library', :git => 'https://github.com/yusuga/leveldb.git', :branch => 'main'
 
   use_react_native!(
     :path => config[:reactNativePath],
@@ -22,69 +26,21 @@ target 'TempGlicoTrack' do
     react_native_post_install(
       installer,
       config[:reactNativePath],
-      :mac_catalyst_enabled => false,
-      # :ccache_enabled => true
+      :mac_catalyst_enabled => false
     )
     
-    # Fix for New Architecture + Xcode 16.2 compatibility
+    # Minimal fixes for New Architecture compatibility
     installer.pods_project.targets.each do |target|
       target.build_configurations.each do |config|
-        # Resolve deprecated API warnings  
+        # Ensure iOS deployment target compatibility
         config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '12.4'
-        
-        # Fix for react-native-svg and other native modules
-        config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] ||= []
-        config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] << 'RCT_NEW_ARCH_ENABLED=1'
         
         # Disable bitcode (deprecated in Xcode 14+)
         config.build_settings['ENABLE_BITCODE'] = 'NO'
         
-        # Fix for broken pipe and compilation issues
-        config.build_settings['CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER'] = 'NO'
-        config.build_settings['CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES'] = 'YES'
-        
-        # Resolve react-native-permissions compilation issues
-        if target.name == 'RNPermissions'
-          config.build_settings['CLANG_WARN_STRICT_PROTOTYPES'] = 'NO'
-        end
-        
-        # Fix for react-native-svg compilation with New Architecture
-        if target.name.start_with?('RNSVG')
-          config.build_settings['CLANG_CXX_LANGUAGE_STANDARD'] = 'c++17'
-          config.build_settings['CLANG_CXX_LIBRARY'] = 'libc++'
-        end
-        
-        # Fix for leveldb-library compilation with Firebase + New Architecture
-        if target.name == 'leveldb-library'
-          config.build_settings['CLANG_CXX_LANGUAGE_STANDARD'] = 'c++17'
-          config.build_settings['CLANG_CXX_LIBRARY'] = 'libc++'
-          config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] ||= []
-          config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] << 'LEVELDB_PLATFORM_POSIX=1'
-          
-          # Critical: Add all necessary header search paths for leveldb
-          config.build_settings['HEADER_SEARCH_PATHS'] ||= []
-          config.build_settings['HEADER_SEARCH_PATHS'] << '$(SRCROOT)/Pods/leveldb-library'
-          config.build_settings['HEADER_SEARCH_PATHS'] << '$(SRCROOT)/Pods/leveldb-library/include'
-          config.build_settings['HEADER_SEARCH_PATHS'] << '$(SRCROOT)/Pods/leveldb-library/db'
-          config.build_settings['HEADER_SEARCH_PATHS'] << '$(SRCROOT)/Pods/leveldb-library/port'
-          config.build_settings['HEADER_SEARCH_PATHS'] << '$(SRCROOT)/Pods/leveldb-library/util'
-          config.build_settings['HEADER_SEARCH_PATHS'] << '$(SRCROOT)/Pods/leveldb-library/table'
-          
-          # Additional compiler flags for leveldb
-          config.build_settings['OTHER_CPLUSPLUSFLAGS'] ||= []
-          config.build_settings['OTHER_CPLUSPLUSFLAGS'] << '-I$(SRCROOT)/Pods/leveldb-library'
-          config.build_settings['OTHER_CPLUSPLUSFLAGS'] << '-DLEVELDB_PLATFORM_POSIX=1'
-          
-          # Ensure proper include paths are set
-          config.build_settings['USE_HEADERMAP'] = 'NO'
-          config.build_settings['ALWAYS_SEARCH_USER_PATHS'] = 'YES'
-        end
-        
-        # Fix for Firebase + New Architecture compatibility
-        if target.name.start_with?('Firebase')
-          config.build_settings['CLANG_WARN_STRICT_PROTOTYPES'] = 'NO'
-          config.build_settings['GCC_WARN_INHIBIT_ALL_WARNINGS'] = 'YES'
-        end
+        # Basic React Native New Architecture support
+        config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] ||= []
+        config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] << 'RCT_NEW_ARCH_ENABLED=1'
       end
     end
   end
