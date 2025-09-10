@@ -29,5 +29,35 @@ target 'TempGlicoTrack' do
       :mac_catalyst_enabled => false,
       # :ccache_enabled => true
     )
+    
+    # Fix for New Architecture + Xcode 16.2 compatibility
+    installer.pods_project.targets.each do |target|
+      target.build_configurations.each do |config|
+        # Resolve deprecated API warnings  
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '12.4'
+        
+        # Fix for react-native-svg and other native modules
+        config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] ||= []
+        config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] << 'RCT_NEW_ARCH_ENABLED=1'
+        
+        # Disable bitcode (deprecated in Xcode 14+)
+        config.build_settings['ENABLE_BITCODE'] = 'NO'
+        
+        # Fix for broken pipe and compilation issues
+        config.build_settings['CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER'] = 'NO'
+        config.build_settings['CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES'] = 'YES'
+        
+        # Resolve react-native-permissions compilation issues
+        if target.name == 'RNPermissions'
+          config.build_settings['CLANG_WARN_STRICT_PROTOTYPES'] = 'NO'
+        end
+        
+        # Fix for react-native-svg compilation with New Architecture
+        if target.name.start_with?('RNSVG')
+          config.build_settings['CLANG_CXX_LANGUAGE_STANDARD'] = 'c++17'
+          config.build_settings['CLANG_CXX_LIBRARY'] = 'libc++'
+        end
+      end
+    end
   end
 end

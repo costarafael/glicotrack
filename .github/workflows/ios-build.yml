@@ -47,8 +47,12 @@ jobs:
         rm -rf Pods Podfile.lock build
         rm -rf ~/Library/Developer/Xcode/DerivedData/GlicoTrack-* || true
         
+        # Clean CocoaPods cache for problematic pods
+        pod cache clean --all || true
+        
         echo "CocoaPods version: $(pod --version)"
         echo "Ruby version: $(ruby --version)"
+        echo "Xcode version: $(xcodebuild -version)"
         
         # Set environment variables for React Native flags
         export RCT_NEW_ARCH_ENABLED=1
@@ -58,12 +62,17 @@ jobs:
         echo "RCT_NEW_ARCH_ENABLED=$RCT_NEW_ARCH_ENABLED"
         echo "USE_HERMES=$USE_HERMES"
         
-        # Simple installation
-        pod install --repo-update
+        # Install with verbose output for debugging
+        echo "=== Starting pod install with enhanced configurations ==="
+        pod install --repo-update --verbose
         
         echo "=== Installation verification ==="
         ls -la . | grep -E "(\.xcworkspace|Podfile\.lock)"
         echo "Workspace created: $(ls -la *.xcworkspace 2>/dev/null || echo 'NOT FOUND')"
+        
+        # Verify critical pods were installed
+        echo "=== Checking critical pods ==="
+        ls -la Pods/ | grep -E "(RNSVG|RNPermissions|Firebase)" || echo "Some pods may be missing"
       env:
         RCT_NEW_ARCH_ENABLED: 1
         USE_HERMES: 1
