@@ -1,0 +1,41 @@
+name: iOS Final Build
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+
+jobs:
+  ios-build:
+    runs-on: macos-14
+    steps:
+    - uses: actions/checkout@v4
+    
+    - uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+    
+    - name: Install npm dependencies
+      run: npm install --legacy-peer-deps
+    
+    - name: Install pods
+      run: |
+        cd ios
+        pod install
+    
+    - name: Build app
+      run: |
+        cd ios
+        xcodebuild \
+          -workspace GlicoTrack.xcworkspace \
+          -scheme GlicoTrack \
+          -configuration Debug \
+          -sdk iphonesimulator \
+          CODE_SIGNING_ALLOWED=NO \
+          build
+    
+    - name: Upload app
+      uses: actions/upload-artifact@v4
+      with:
+        name: GlicoTrack-iOS-App
+        path: ios/build/Build/Products/Debug-iphonesimulator/TempGlicoTrack.app
