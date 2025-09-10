@@ -118,6 +118,39 @@ jobs:
         RCT_NEW_ARCH_ENABLED: 1
         USE_HERMES: 1
         
+    - name: Debug leveldb-library Structure
+      run: |
+        cd ios
+        echo "=== Debugging leveldb-library header structure ==="
+        
+        if [ -d "Pods/leveldb-library" ]; then
+          echo "✅ leveldb-library pod found"
+          echo "📁 Directory structure:"
+          find Pods/leveldb-library -type d | head -20
+          
+          echo "🔍 Header files:"
+          find Pods/leveldb-library -name "*.h" | head -20
+          
+          echo "🔍 Checking specific problematic headers:"
+          if [ -f "Pods/leveldb-library/db/version_set.h" ]; then
+            echo "✅ db/version_set.h exists"
+          else
+            echo "❌ db/version_set.h NOT found"
+            echo "📋 Contents of db/ directory:"
+            ls -la Pods/leveldb-library/db/ 2>/dev/null || echo "db/ directory not found"
+          fi
+          
+          if [ -f "Pods/leveldb-library/db/version_edit.h" ]; then
+            echo "✅ db/version_edit.h exists"
+          else
+            echo "❌ db/version_edit.h NOT found"
+          fi
+        else
+          echo "❌ leveldb-library pod not found"
+          echo "📋 Available pods:"
+          ls -la Pods/ | head -10
+        fi
+        
     - name: Build iOS App (Debug)
       run: |
         cd ios

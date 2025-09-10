@@ -14,6 +14,9 @@ $RNFirebaseAsStaticFramework = true
 
 target 'TempGlicoTrack' do
   config = use_native_modules!
+  
+  # Force specific leveldb version that's compatible with New Architecture
+  pod 'leveldb-library', '~> 1.22.1'
 
   use_react_native!(
     :path => config[:reactNativePath],
@@ -64,9 +67,24 @@ target 'TempGlicoTrack' do
           config.build_settings['CLANG_CXX_LIBRARY'] = 'libc++'
           config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] ||= []
           config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] << 'LEVELDB_PLATFORM_POSIX=1'
+          
+          # Critical: Add all necessary header search paths for leveldb
           config.build_settings['HEADER_SEARCH_PATHS'] ||= []
           config.build_settings['HEADER_SEARCH_PATHS'] << '$(SRCROOT)/Pods/leveldb-library'
           config.build_settings['HEADER_SEARCH_PATHS'] << '$(SRCROOT)/Pods/leveldb-library/include'
+          config.build_settings['HEADER_SEARCH_PATHS'] << '$(SRCROOT)/Pods/leveldb-library/db'
+          config.build_settings['HEADER_SEARCH_PATHS'] << '$(SRCROOT)/Pods/leveldb-library/port'
+          config.build_settings['HEADER_SEARCH_PATHS'] << '$(SRCROOT)/Pods/leveldb-library/util'
+          config.build_settings['HEADER_SEARCH_PATHS'] << '$(SRCROOT)/Pods/leveldb-library/table'
+          
+          # Additional compiler flags for leveldb
+          config.build_settings['OTHER_CPLUSPLUSFLAGS'] ||= []
+          config.build_settings['OTHER_CPLUSPLUSFLAGS'] << '-I$(SRCROOT)/Pods/leveldb-library'
+          config.build_settings['OTHER_CPLUSPLUSFLAGS'] << '-DLEVELDB_PLATFORM_POSIX=1'
+          
+          # Ensure proper include paths are set
+          config.build_settings['USE_HEADERMAP'] = 'NO'
+          config.build_settings['ALWAYS_SEARCH_USER_PATHS'] = 'YES'
         end
         
         # Fix for Firebase + New Architecture compatibility
