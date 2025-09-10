@@ -37,11 +37,35 @@ jobs:
         echo "Ruby: $(ruby --version)"
         echo "CocoaPods: $(pod --version)"
 
+    - name: Clear CocoaPods Cache
+      run: |
+        echo "=== Clearing CocoaPods Cache ==="
+        cd ios
+        rm -rf Pods Podfile.lock build
+        pod cache clean --all || true
+
     - name: Install CocoaPods Dependencies
       run: |
         cd ios
         echo "=== Installing CocoaPods Dependencies ==="
         pod install --verbose
+        
+        echo "=== Checking LevelDB Installation ==="
+        if [ -d "Pods/leveldb-library" ]; then
+          echo "✅ LevelDB found, checking patch status:"
+          if grep -q "port/port.h" Pods/leveldb-library/db/version_set.h; then
+            echo "✅ version_set.h already patched"
+          else
+            echo "❌ version_set.h NOT patched"
+          fi
+          if grep -q "port/port.h" Pods/leveldb-library/db/version_set.cc; then
+            echo "✅ version_set.cc already patched"
+          else
+            echo "❌ version_set.cc NOT patched"
+          fi
+        else
+          echo "❌ LevelDB not found in Pods"
+        fi
       env:
         RCT_NEW_ARCH_ENABLED: 1
         USE_HERMES: 1
