@@ -75,7 +75,7 @@ jobs:
         
         xcodebuild \
           -workspace GlicoTrack.xcworkspace \
-          -scheme TempGlicoTrack \
+          -scheme GlicoTrack \
           -configuration Debug \
           -sdk iphonesimulator \
           -derivedDataPath build \
@@ -90,7 +90,7 @@ jobs:
         cd ios
         xcodebuild \
           -workspace GlicoTrack.xcworkspace \
-          -scheme TempGlicoTrack \
+          -scheme GlicoTrack \
           -configuration Release \
           -destination 'generic/platform=iOS' \
           -derivedDataPath build \
@@ -99,7 +99,7 @@ jobs:
           CODE_SIGN_IDENTITY="iPhone Developer" \
           PROVISIONING_PROFILE_SPECIFIER="" \
           clean archive \
-          -archivePath build/TempGlicoTrack.xcarchive
+          -archivePath build/GlicoTrack.xcarchive
           
     - name: Export IPA (Release - Optional)
       if: github.ref == 'refs/heads/main'
@@ -127,7 +127,7 @@ jobs:
         
         xcodebuild \
           -exportArchive \
-          -archivePath build/TempGlicoTrack.xcarchive \
+          -archivePath build/GlicoTrack.xcarchive \
           -exportPath build \
           -exportOptionsPlist ExportOptions.plist \
           -allowProvisioningUpdates
@@ -139,7 +139,7 @@ jobs:
         name: ios-build-artifacts
         path: |
           ios/build/Build/Products/Debug-iphonesimulator/TempGlicoTrack.app
-          ios/build/TempGlicoTrack.ipa
+          ios/build/GlicoTrack.ipa
         retention-days: 7
         
     - name: Upload Build Logs
