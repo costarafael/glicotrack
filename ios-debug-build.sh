@@ -37,7 +37,14 @@ echo "  - Ruby: $(ruby --version)"
 pod cache clean --all 2>/dev/null || true
 
 echo "📱 Installing CocoaPods dependencies..."
-pod install --repo-update
+if ! pod install --repo-update > pod_install.log 2>&1; then
+  echo "⚠️ Pod install failed, showing last 50 lines:"
+  tail -50 pod_install.log
+  echo "🔄 Retrying..."
+  pod install --repo-update
+else
+  echo "✅ Pod install completed successfully"
+fi
 
 echo "🔨 Building iOS App (Debug/Simulator)..."
 echo "  - Configuration: Debug with leveldb fixes"

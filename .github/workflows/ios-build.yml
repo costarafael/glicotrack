@@ -62,17 +62,58 @@ jobs:
         echo "RCT_NEW_ARCH_ENABLED=$RCT_NEW_ARCH_ENABLED"
         echo "USE_HERMES=$USE_HERMES"
         
-        # Install with controlled output to prevent broken pipe
+        # Install pods with output management to prevent broken pipe
         echo "=== Starting pod install with enhanced configurations ==="
-        pod install --repo-update 2>&1 | head -100 || pod install --repo-update
+        
+        # Method 1: Try with output to file to avoid broken pipe
+        if ! pod install --repo-update > pod_install.log 2>&1; then
+          echo "⚠️ Pod install failed, showing last 50 lines of log:"
+          tail -50 pod_install.log || true
+          echo "🔄 Retrying pod install..."
+          pod install --repo-update
+        else
+          echo "✅ Pod install completed successfully"
+          echo "📋 Showing last 20 lines of install log:"
+          tail -20 pod_install.log || true
+        fi
         
         echo "=== Installation verification ==="
-        ls -la . | grep -E "(\.xcworkspace|Podfile\.lock)"
-        echo "Workspace created: $(ls -la *.xcworkspace 2>/dev/null || echo 'NOT FOUND')"
         
-        # Verify critical pods were installed
-        echo "=== Checking critical pods ==="
-        ls -la Pods/ | grep -E "(RNSVG|RNPermissions|Firebase)" || echo "Some pods may be missing"
+        # Check if workspace was created
+        if [ -f "GlicoTrack.xcworkspace/contents.xcworkspacedata" ]; then
+          echo "✅ Workspace: GlicoTrack.xcworkspace created successfully"
+        else
+          echo "❌ Workspace: GlicoTrack.xcworkspace NOT found"
+          ls -la *.xcworkspace 2>/dev/null || echo "No .xcworkspace files found"
+        fi
+        
+        # Check if Podfile.lock was created
+        if [ -f "Podfile.lock" ]; then
+          echo "✅ Podfile.lock: Created successfully"
+          echo "📋 Podfile.lock size: $(wc -l < Podfile.lock) lines"
+        else
+          echo "❌ Podfile.lock: NOT found"
+        fi
+        
+        # Check if Pods directory exists and has content
+        if [ -d "Pods" ]; then
+          echo "✅ Pods directory: Exists with $(ls -1 Pods | wc -l) pods"
+          echo "📦 Critical pods check:"
+          ls -la Pods/ | grep -E "(RNSVG|RNPermissions|Firebase|leveldb)" || echo "⚠️ Some expected pods may be missing"
+        else
+          echo "❌ Pods directory: NOT found"
+        fi
+        
+        # Final verification
+        echo "=== Final Status Check ==="
+        if [ -f "GlicoTrack.xcworkspace/contents.xcworkspacedata" ] && [ -f "Podfile.lock" ] && [ -d "Pods" ]; then
+          echo "✅ CocoaPods installation appears successful"
+        else
+          echo "❌ CocoaPods installation may have failed"
+          echo "🔍 Debugging info:"
+          ls -la | head -10
+          exit 1
+        fi
       env:
         RCT_NEW_ARCH_ENABLED: 1
         USE_HERMES: 1
@@ -82,16 +123,17 @@ jobs:
         cd ios
         echo "=== Building iOS App for Simulator ==="
         
-        # Build with controlled output and leveldb fixes
-        set -o pipefail
-        xcodebuild \
+        # Build with proper error handling and leveldb fixes
+        echo "🔨 Starting iOS build process..."
+        
+        # Build to log file to avoid broken pipe, then show relevant output
+        if ! xcodebuild \
           -workspace GlicoTrack.xcworkspace \
           -scheme GlicoTrack \
           -configuration Debug \
           -sdk iphonesimulator \
           -derivedDataPath build \
           -allowProvisioningUpdates \
-          -quiet \
           CODE_SIGNING_ALLOWED=NO \
           CODE_SIGNING_REQUIRED=NO \
           CODE_SIGN_IDENTITY="" \
@@ -100,7 +142,19 @@ jobs:
           ONLY_ACTIVE_ARCH=NO \
           CLANG_CXX_LANGUAGE_STANDARD=c++17 \
           CLANG_CXX_LIBRARY=libc++ \
-          clean build | head -200 || echo "Build process completed with errors"
+          clean build > build.log 2>&1; then
+          
+          echo "❌ Build failed, showing error details:"
+          echo "=== Last 100 lines of build log ==="
+          tail -100 build.log
+          echo "=== Error summary ==="
+          grep -i "error:" build.log | tail -10 || echo "No specific errors found in log"
+          exit 1
+        else
+          echo "✅ Build completed successfully!"
+          echo "📋 Build summary from log:"
+          grep -E "(BUILD SUCCEEDED|warning:|note:)" build.log | tail -20 || echo "No build summary available"
+        fi
           
     - name: Build iOS App for Device (Release - Optional)
       if: github.ref == 'refs/heads/main'
