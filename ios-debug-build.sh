@@ -40,6 +40,10 @@ echo "📱 Installing CocoaPods dependencies..."
 pod install --repo-update
 
 echo "🔨 Building iOS App (Debug/Simulator)..."
+echo "  - Configuration: Debug with leveldb fixes"
+echo "  - SDK: iphonesimulator"
+echo "  - Code Signing: Disabled"
+
 xcodebuild \
   -workspace GlicoTrack.xcworkspace \
   -scheme GlicoTrack \
@@ -52,6 +56,8 @@ xcodebuild \
   PROVISIONING_PROFILE="" \
   DEVELOPMENT_TEAM="" \
   ONLY_ACTIVE_ARCH=NO \
+  CLANG_CXX_LANGUAGE_STANDARD=c++17 \
+  CLANG_CXX_LIBRARY=libc++ \
   clean build
 
 if [ $? -eq 0 ]; then

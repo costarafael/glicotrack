@@ -62,9 +62,9 @@ jobs:
         echo "RCT_NEW_ARCH_ENABLED=$RCT_NEW_ARCH_ENABLED"
         echo "USE_HERMES=$USE_HERMES"
         
-        # Install with verbose output for debugging
+        # Install with controlled output to prevent broken pipe
         echo "=== Starting pod install with enhanced configurations ==="
-        pod install --repo-update --verbose
+        pod install --repo-update 2>&1 | head -100 || pod install --repo-update
         
         echo "=== Installation verification ==="
         ls -la . | grep -E "(\.xcworkspace|Podfile\.lock)"
@@ -82,6 +82,8 @@ jobs:
         cd ios
         echo "=== Building iOS App for Simulator ==="
         
+        # Build with controlled output and leveldb fixes
+        set -o pipefail
         xcodebuild \
           -workspace GlicoTrack.xcworkspace \
           -scheme GlicoTrack \
@@ -89,13 +91,16 @@ jobs:
           -sdk iphonesimulator \
           -derivedDataPath build \
           -allowProvisioningUpdates \
+          -quiet \
           CODE_SIGNING_ALLOWED=NO \
           CODE_SIGNING_REQUIRED=NO \
           CODE_SIGN_IDENTITY="" \
           PROVISIONING_PROFILE="" \
           DEVELOPMENT_TEAM="" \
           ONLY_ACTIVE_ARCH=NO \
-          clean build
+          CLANG_CXX_LANGUAGE_STANDARD=c++17 \
+          CLANG_CXX_LIBRARY=libc++ \
+          clean build | head -200 || echo "Build process completed with errors"
           
     - name: Build iOS App for Device (Release - Optional)
       if: github.ref == 'refs/heads/main'

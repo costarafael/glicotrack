@@ -57,6 +57,23 @@ target 'TempGlicoTrack' do
           config.build_settings['CLANG_CXX_LANGUAGE_STANDARD'] = 'c++17'
           config.build_settings['CLANG_CXX_LIBRARY'] = 'libc++'
         end
+        
+        # Fix for leveldb-library compilation with Firebase + New Architecture
+        if target.name == 'leveldb-library'
+          config.build_settings['CLANG_CXX_LANGUAGE_STANDARD'] = 'c++17'
+          config.build_settings['CLANG_CXX_LIBRARY'] = 'libc++'
+          config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] ||= []
+          config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] << 'LEVELDB_PLATFORM_POSIX=1'
+          config.build_settings['HEADER_SEARCH_PATHS'] ||= []
+          config.build_settings['HEADER_SEARCH_PATHS'] << '$(SRCROOT)/Pods/leveldb-library'
+          config.build_settings['HEADER_SEARCH_PATHS'] << '$(SRCROOT)/Pods/leveldb-library/include'
+        end
+        
+        # Fix for Firebase + New Architecture compatibility
+        if target.name.start_with?('Firebase')
+          config.build_settings['CLANG_WARN_STRICT_PROTOTYPES'] = 'NO'
+          config.build_settings['GCC_WARN_INHIBIT_ALL_WARNINGS'] = 'YES'
+        end
       end
     end
   end
