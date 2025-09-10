@@ -11,9 +11,9 @@ $RNFirebaseAsStaticFramework = true
 target 'TempGlicoTrack' do
   config = use_native_modules!
   
-  # Fix for leveldb-library missing source files issue
-  # Use Firebase's maintained leveldb fork with proper podspec
-  pod 'leveldb-library', :git => 'https://github.com/firebase/leveldb.git', :branch => 'firebase-release'
+  # Temporarily remove leveldb-library to test if base build works
+  # This will be added back once base build is confirmed working
+  # pod 'leveldb-library', :git => 'https://github.com/firebase/leveldb.git', :branch => 'firebase-release'
 
   use_react_native!(
     :path => config[:reactNativePath],
