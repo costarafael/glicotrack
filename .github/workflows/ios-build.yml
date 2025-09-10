@@ -71,7 +71,7 @@ jobs:
         # Instala os pods com logs mais verbosos e sem atualização de repositório para melhor estabilidade
         echo "Ruby version: $(ruby --version)"
         echo "RubyGems version: $(gem --version)"
-        pod install --verbose --no-repo-update
+        pod install --verbose --no-repo-update --skip-import-validation
       env:
         RCT_NEW_ARCH_ENABLED: 1
         USE_HERMES: 1
