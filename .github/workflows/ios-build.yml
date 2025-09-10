@@ -44,6 +44,12 @@ jobs:
         echo "Node.js: $(node --version)"
         echo "npm: $(npm --version)"
 
+    - name: Cleanup Ruby Gems Cache
+      run: gem cleanup
+
+    - name: Ensure Latest CocoaPods
+      run: sudo gem install cocoapods -v 1.16.2
+
     - name: Cache CocoaPods
       uses: actions/cache@v4
       with:
@@ -62,9 +68,10 @@ jobs:
         
         echo "CocoaPods version: $(pod --version)"
         
-        # Instala os pods, atualizando o repositório apenas se necessário.
-        # A flag --repo-update é executada pelo CocoaPods automaticamente se o Podfile.lock estiver desatualizado.
-        pod install --verbose
+        # Instala os pods com logs mais verbosos e sem atualização de repositório para melhor estabilidade
+        echo "Ruby version: $(ruby --version)"
+        echo "RubyGems version: $(gem --version)"
+        pod install --verbose --no-repo-update
       env:
         RCT_NEW_ARCH_ENABLED: 1
         USE_HERMES: 1
