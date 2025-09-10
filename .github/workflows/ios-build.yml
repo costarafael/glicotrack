@@ -62,19 +62,67 @@ jobs:
         echo "RCT_NEW_ARCH_ENABLED=$RCT_NEW_ARCH_ENABLED"
         echo "USE_HERMES=$USE_HERMES"
         
-        # Install pods with output management to prevent broken pipe
-        echo "=== Starting pod install with enhanced configurations ==="
+        # Enhanced CocoaPods installation with comprehensive error handling
+        echo "=== Starting robust pod install process ==="
         
-        # Method 1: Try with output to file to avoid broken pipe
-        if ! pod install --repo-update > pod_install.log 2>&1; then
-          echo "⚠️ Pod install failed, showing last 50 lines of log:"
-          tail -50 pod_install.log || true
-          echo "🔄 Retrying pod install..."
-          pod install --repo-update
+        # Step 1: Update CocoaPods repo first
+        echo "🔄 Updating CocoaPods repository..."
+        pod repo update --verbose || echo "⚠️ Repo update had issues but continuing..."
+        
+        # Step 2: Attempt installation with detailed logging
+        echo "📦 Installing pods with comprehensive logging..."
+        
+        # Try installation with multiple fallback strategies
+        INSTALL_SUCCESS=false
+        
+        # Strategy 1: Standard install
+        echo "🎯 Strategy 1: Standard install with repo update"
+        if pod install --repo-update --verbose > pod_install_full.log 2>&1; then
+          INSTALL_SUCCESS=true
+          echo "✅ Standard install succeeded!"
         else
-          echo "✅ Pod install completed successfully"
-          echo "📋 Showing last 20 lines of install log:"
-          tail -20 pod_install.log || true
+          echo "❌ Standard install failed, trying alternatives..."
+          echo "📋 Last 30 lines of failed install:"
+          tail -30 pod_install_full.log
+        fi
+        
+        # Strategy 2: Clean install if first failed
+        if [ "$INSTALL_SUCCESS" = false ]; then
+          echo "🎯 Strategy 2: Clean install after cache clear"
+          pod cache clean --all
+          rm -rf Pods Podfile.lock
+          
+          if pod install --repo-update --verbose > pod_install_clean.log 2>&1; then
+            INSTALL_SUCCESS=true
+            echo "✅ Clean install succeeded!"
+          else
+            echo "❌ Clean install also failed"
+            echo "📋 Last 30 lines of clean install:"
+            tail -30 pod_install_clean.log
+          fi
+        fi
+        
+        # Strategy 3: Install without repo update as last resort
+        if [ "$INSTALL_SUCCESS" = false ]; then
+          echo "🎯 Strategy 3: Install without repo update"
+          if pod install --verbose > pod_install_no_update.log 2>&1; then
+            INSTALL_SUCCESS=true
+            echo "✅ Install without update succeeded!"
+          else
+            echo "❌ All installation strategies failed!"
+            echo "📋 Final attempt log:"
+            tail -50 pod_install_no_update.log
+          fi
+        fi
+        
+        # Verify installation success
+        if [ "$INSTALL_SUCCESS" = false ]; then
+          echo "💥 CRITICAL: All CocoaPods installation strategies failed!"
+          echo "🔍 Debugging pod environment:"
+          pod --version
+          ruby --version
+          gem list | grep cocoapods
+          exit 1
         fi
         
         echo "=== Installation verification ==="
@@ -98,58 +146,78 @@ jobs:
         # Check if Pods directory exists and has content
         if [ -d "Pods" ]; then
           echo "✅ Pods directory: Exists with $(ls -1 Pods | wc -l) pods"
-          echo "📦 Critical pods check:"
-          ls -la Pods/ | grep -E "(RNSVG|RNPermissions|Firebase|leveldb)" || echo "⚠️ Some expected pods may be missing"
+          echo "📦 Critical pods verification:"
+          
+          # Check each critical pod individually
+          for pod in "RNSVG" "RNPermissions" "Firebase" "leveldb-library"; do
+            if [ -d "Pods/$pod" ]; then
+              echo "  ✅ $pod: Found"
+            else
+              echo "  ❌ $pod: MISSING"
+            fi
+          done
+          
+          # Specific leveldb verification
+          if [ -d "Pods/leveldb-library" ]; then
+            echo "🔍 leveldb-library detailed check:"
+            echo "  📁 Directory size: $(du -sh Pods/leveldb-library 2>/dev/null || echo 'Unknown')"
+            echo "  📄 Header files count: $(find Pods/leveldb-library -name "*.h" | wc -l)"
+            
+            # Check critical headers
+            for header in "db/version_set.h" "db/version_edit.h"; do
+              if [ -f "Pods/leveldb-library/$header" ]; then
+                echo "  ✅ $header: Found"
+              else
+                echo "  ❌ $header: MISSING"
+              fi
+            done
+          else
+            echo "💥 CRITICAL: leveldb-library pod is completely missing!"
+          fi
         else
           echo "❌ Pods directory: NOT found"
         fi
         
-        # Final verification
+        # Final verification with leveldb focus
         echo "=== Final Status Check ==="
-        if [ -f "GlicoTrack.xcworkspace/contents.xcworkspacedata" ] && [ -f "Podfile.lock" ] && [ -d "Pods" ]; then
-          echo "✅ CocoaPods installation appears successful"
-        else
-          echo "❌ CocoaPods installation may have failed"
-          echo "🔍 Debugging info:"
-          ls -la | head -10
+        VERIFICATION_FAILED=false
+        
+        if [ ! -f "GlicoTrack.xcworkspace/contents.xcworkspacedata" ]; then
+          echo "❌ Workspace not created"
+          VERIFICATION_FAILED=true
+        fi
+        
+        if [ ! -f "Podfile.lock" ]; then
+          echo "❌ Podfile.lock not created"
+          VERIFICATION_FAILED=true
+        fi
+        
+        if [ ! -d "Pods/leveldb-library" ]; then
+          echo "❌ leveldb-library pod missing"
+          VERIFICATION_FAILED=true
+        fi
+        
+        if [ ! -f "Pods/leveldb-library/db/version_set.h" ]; then
+          echo "❌ Critical leveldb header missing: db/version_set.h"
+          VERIFICATION_FAILED=true
+        fi
+        
+        if [ "$VERIFICATION_FAILED" = true ]; then
+          echo "💥 CRITICAL: CocoaPods installation verification failed!"
+          echo "🔍 Debug information:"
+          echo "📋 Podfile content:"
+          cat Podfile | head -20
+          echo "📋 Available pods:"
+          ls -la Pods/ 2>/dev/null | head -10
+          echo "📋 Podfile.lock snippet:"
+          head -20 Podfile.lock 2>/dev/null || echo "Podfile.lock not found"
           exit 1
+        else
+          echo "✅ All verifications passed - CocoaPods installation successful!"
         fi
       env:
         RCT_NEW_ARCH_ENABLED: 1
         USE_HERMES: 1
-        
-    - name: Debug leveldb-library Structure
-      run: |
-        cd ios
-        echo "=== Debugging leveldb-library header structure ==="
-        
-        if [ -d "Pods/leveldb-library" ]; then
-          echo "✅ leveldb-library pod found"
-          echo "📁 Directory structure:"
-          find Pods/leveldb-library -type d | head -20
-          
-          echo "🔍 Header files:"
-          find Pods/leveldb-library -name "*.h" | head -20
-          
-          echo "🔍 Checking specific problematic headers:"
-          if [ -f "Pods/leveldb-library/db/version_set.h" ]; then
-            echo "✅ db/version_set.h exists"
-          else
-            echo "❌ db/version_set.h NOT found"
-            echo "📋 Contents of db/ directory:"
-            ls -la Pods/leveldb-library/db/ 2>/dev/null || echo "db/ directory not found"
-          fi
-          
-          if [ -f "Pods/leveldb-library/db/version_edit.h" ]; then
-            echo "✅ db/version_edit.h exists"
-          else
-            echo "❌ db/version_edit.h NOT found"
-          fi
-        else
-          echo "❌ leveldb-library pod not found"
-          echo "📋 Available pods:"
-          ls -la Pods/ | head -10
-        fi
         
     - name: Build iOS App (Debug)
       run: |
