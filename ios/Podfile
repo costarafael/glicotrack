@@ -12,8 +12,8 @@ target 'TempGlicoTrack' do
   config = use_native_modules!
   
   # Fix for leveldb-library missing source files issue
-  # Use a maintained fork that includes all necessary source files and headers
-  pod 'leveldb-library', :git => 'https://github.com/yusuga/leveldb.git', :branch => 'main'
+  # Use official Google leveldb repository
+  pod 'leveldb-library', :git => 'https://github.com/google/leveldb.git'
 
   use_react_native!(
     :path => config[:reactNativePath],
