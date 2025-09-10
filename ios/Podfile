@@ -43,5 +43,33 @@ target 'TempGlicoTrack' do
         config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] << 'RCT_NEW_ARCH_ENABLED=1'
       end
     end
+    
+    # Fix LevelDB port namespace compilation errors
+    leveldb_version_set_h = installer.sandbox.root + 'leveldb-library/db/version_set.h'
+    leveldb_version_set_cc = installer.sandbox.root + 'leveldb-library/db/version_set.cc'
+    
+    if leveldb_version_set_h.exist?
+      content_h = leveldb_version_set_h.read
+      unless content_h.include?('#include "port/port.h"')
+        puts "🔧 Patching leveldb-library/db/version_set.h with port/port.h include"
+        new_content_h = content_h.sub(
+          /#include "db\/dbformat\.h"/,
+          "#include \"db/dbformat.h\"\n#include \"port/port.h\""
+        )
+        leveldb_version_set_h.write(new_content_h)
+      end
+    end
+    
+    if leveldb_version_set_cc.exist?
+      content_cc = leveldb_version_set_cc.read
+      unless content_cc.include?('#include "port/port.h"')
+        puts "🔧 Patching leveldb-library/db/version_set.cc with port/port.h include"
+        new_content_cc = content_cc.sub(
+          /#include "db\/version_set\.h"/,
+          "#include \"db/version_set.h\"\n#include \"port/port.h\""
+        )
+        leveldb_version_set_cc.write(new_content_cc)
+      end
+    end
   end
 end
