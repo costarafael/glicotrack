@@ -50,12 +50,23 @@ jobs:
         echo "CocoaPods version: $(pod --version)"
         echo "Ruby version: $(ruby --version)"
         
+        # Set environment variables for React Native flags
+        export RCT_NEW_ARCH_ENABLED=1
+        export USE_HERMES=1
+        
+        echo "Environment flags:"
+        echo "RCT_NEW_ARCH_ENABLED=$RCT_NEW_ARCH_ENABLED"
+        echo "USE_HERMES=$USE_HERMES"
+        
         # Simple installation
         pod install --repo-update
         
         echo "=== Installation verification ==="
         ls -la . | grep -E "(\.xcworkspace|Podfile\.lock)"
         echo "Workspace created: $(ls -la *.xcworkspace 2>/dev/null || echo 'NOT FOUND')"
+      env:
+        RCT_NEW_ARCH_ENABLED: 1
+        USE_HERMES: 1
         
     - name: Build iOS App (Debug)
       run: |
