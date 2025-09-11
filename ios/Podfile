@@ -39,22 +39,38 @@ target 'TempGlicoTrack' do
         config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] << 'RCT_NEW_ARCH_ENABLED=1'
       end
       
-      # Fix react-native-mmkv MRC compilation issue
+      # Fix react-native-mmkv compilation issues (MRC + C++/ObjC conversion)
       if target.name == 'MMKV'
         target.build_configurations.each do |config|
+          # Enable Objective-C exceptions for better C++/ObjC interop
           config.build_settings['GCC_ENABLE_OBJC_EXCEPTIONS'] = 'YES'
+          
+          # Enable C++ standard library for better std::string support
+          config.build_settings['CLANG_CXX_LANGUAGE_STANDARD'] = 'c++17'
+          config.build_settings['CLANG_CXX_LIBRARY'] = 'libc++'
+          
+          # Add header search paths for better includes
+          config.build_settings['HEADER_SEARCH_PATHS'] ||= []
+          config.build_settings['HEADER_SEARCH_PATHS'] << '$(inherited)'
         end
         
         target.source_build_phase.files.each do |file|
           if file.file_ref.path.end_with?('.cpp') || file.file_ref.path.end_with?('.mm')
-            # Files that need MRC (Manual Reference Counting)
-            if file.file_ref.path.include?('MiniPBCoder') || 
-               file.file_ref.path.include?('PBEncodeItem') ||
-               file.file_ref.path.include?('CodedInputData') ||
-               file.file_ref.path.include?('CodedOutputData')
+            file_path = file.file_ref.path
+            
+            # Files that need MRC (Manual Reference Counting) 
+            if file_path.include?('MiniPBCoder') || file_path.include?('PBEncodeItem') ||
+               file_path.include?('CodedInputData') || file_path.include?('CodedOutputData')
               
-              puts "🔧 Setting -fno-objc-arc for MMKV file: #{file.file_ref.path}"
+              puts "🔧 Setting -fno-objc-arc for MMKV MRC file: #{file_path}"
               file.settings = { 'COMPILER_FLAGS' => '-fno-objc-arc' }
+              
+            # Files that need better C++/ObjC interop
+            elsif file_path.include?('MmkvHostObject') || file_path.include?('MMKV')
+              puts "🔧 Setting C++/ObjC compatibility flags for: #{file_path}"
+              file.settings = { 
+                'COMPILER_FLAGS' => '-std=c++17 -Wno-conversion -Wno-nullability-completeness'
+              }
             end
           end
         end
