@@ -28,8 +28,8 @@ target 'TempGlicoTrack' do
     # Minimal fixes for New Architecture compatibility
     installer.pods_project.targets.each do |target|
       target.build_configurations.each do |config|
-        # Ensure iOS deployment target compatibility
-        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '12.4'
+        # Let React Native handle deployment target automatically (iOS 15.1+)
+        # Removed forced IPHONEOS_DEPLOYMENT_TARGET = '12.4' - causes Firebase conflicts
         
         # Disable bitcode (deprecated in Xcode 14+)
         config.build_settings['ENABLE_BITCODE'] = 'NO'
