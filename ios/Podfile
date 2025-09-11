@@ -1,12 +1,12 @@
-# Simplified Podfile for reliable installation
+# Test Podfile WITHOUT Firebase (leveldb isolation)
 require_relative '../node_modules/react-native/scripts/react_native_pods'
 
 platform :ios, '16.0'
 prepare_react_native_project!
 
-# Firebase requires static frameworks
-use_frameworks! :linkage => :static
-$RNFirebaseAsStaticFramework = true
+# Temporarily disabled Firebase to isolate leveldb build issues
+# use_frameworks! :linkage => :static
+# $RNFirebaseAsStaticFramework = true
 
 target 'TempGlicoTrack' do
   config = use_native_modules!
@@ -25,10 +25,10 @@ target 'TempGlicoTrack' do
       :mac_catalyst_enabled => false
     )
     
-    # Fix deployment targets and LevelDB issues
+    # Simplified post_install without Firebase/LevelDB patches
     installer.pods_project.targets.each do |target|
       target.build_configurations.each do |config|
-        # Ensure consistent deployment target for all pods (Hermes + Firebase v23 compatible)
+        # Ensure consistent deployment target for all pods (Hermes compatible)
         config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '16.0'
         
         # Disable bitcode (deprecated in Xcode 14+)
@@ -40,32 +40,6 @@ target 'TempGlicoTrack' do
       end
     end
     
-    # Fix LevelDB port namespace compilation errors
-    leveldb_version_set_h = installer.sandbox.root + 'leveldb-library/db/version_set.h'
-    leveldb_version_set_cc = installer.sandbox.root + 'leveldb-library/db/version_set.cc'
-    
-    if leveldb_version_set_h.exist?
-      content_h = leveldb_version_set_h.read
-      unless content_h.include?('#include "port/port.h"')
-        puts "🔧 Patching leveldb-library/db/version_set.h with port/port.h include"
-        new_content_h = content_h.sub(
-          /#include "db\/dbformat\.h"/,
-          "#include \"db/dbformat.h\"\n#include \"port/port.h\""
-        )
-        leveldb_version_set_h.write(new_content_h)
-      end
-    end
-    
-    if leveldb_version_set_cc.exist?
-      content_cc = leveldb_version_set_cc.read
-      unless content_cc.include?('#include "port/port.h"')
-        puts "🔧 Patching leveldb-library/db/version_set.cc with port/port.h include"
-        new_content_cc = content_cc.sub(
-          /#include "db\/version_set\.h"/,
-          "#include \"db/version_set.h\"\n#include \"port/port.h\""
-        )
-        leveldb_version_set_cc.write(new_content_cc)
-      end
-    end
+    # LevelDB patches removed - testing build without Firebase
   end
 end

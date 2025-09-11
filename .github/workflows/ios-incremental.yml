@@ -1,4 +1,4 @@
-name: iOS Build - Detailed Debug
+name: iOS Build - No Firebase Test
 
 on:
   workflow_dispatch:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   build-ios:
-    name: iOS Build with Enhanced Logging
+    name: iOS Build WITHOUT Firebase (LevelDB Isolation)
     runs-on: macos-14
 
     steps:
