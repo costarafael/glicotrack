@@ -39,7 +39,7 @@ jobs:
       run: |
         cd ios
         echo "=== Testing Pod Install ==="
-        pod install --verbose
+        pod install --repo-update
       env:
         RCT_NEW_ARCH_ENABLED: 1
         USE_HERMES: 1
