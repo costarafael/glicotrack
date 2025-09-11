@@ -1,4 +1,4 @@
-name: iOS Build - No Firebase Test
+name: iOS Build - No Firebase/MMKV Test
 
 on:
   workflow_dispatch:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   build-ios:
-    name: iOS Build WITHOUT Firebase (LevelDB Isolation)
+    name: iOS Build WITHOUT Firebase/MMKV (Full Isolation)
     runs-on: macos-14
 
     steps:
