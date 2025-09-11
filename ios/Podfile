@@ -4,10 +4,10 @@
 $RNFirebaseAsStaticFramework = true
 
 require_relative '../node_modules/react-native/scripts/react_native_pods'
-require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
 # Defina a versão mínima globalmente para 13.0, conforme exigido pelo Firebase
 platform :ios, '13.0'
+prepare_react_native_project!
 
 target 'TempGlicoTrack' do # Mantendo o nome atual do target
   config = use_native_modules!
