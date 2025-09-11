@@ -1,4 +1,4 @@
-name: iOS Build - Incremental
+name: iOS Build - Detailed Debug
 
 on:
   workflow_dispatch:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   build-ios:
-    name: Pod Install + Xcode Build Test
+    name: iOS Build with Enhanced Logging
     runs-on: macos-14
 
     steps:
@@ -19,47 +19,94 @@ jobs:
       with:
         node-version: '18'
 
-    - name: Install Dependencies
-      run: npm install --legacy-peer-deps
+    - name: Environment Info (Pre-Install)
+      run: |
+        echo "=== Pre-Install Environment ==="
+        xcodebuild -version
+        echo "Node: $(node --version)"
+        echo "npm: $(npm --version)"
+        echo "Ruby: $(ruby --version)"
+        echo "CocoaPods: $(pod --version)"
+        echo "Current directory: $(pwd)"
+        echo "Files in root:"
+        ls -la
+
+    - name: Install npm Dependencies (Verbose)
+      run: |
+        echo "=== Installing npm Dependencies ==="
+        echo "package.json Firebase versions:"
+        grep -A5 -B5 "firebase" package.json || echo "No Firebase entries found"
+        echo ""
+        echo "Running npm install with detailed output:"
+        npm install --legacy-peer-deps --verbose
+        echo ""
+        echo "Checking node_modules Firebase versions:"
+        ls -la node_modules/@react-native-firebase/ 2>/dev/null || echo "Firebase modules not found"
 
     - name: Select Xcode Version
       uses: maxim-lobanov/setup-xcode@v1
       with:
         xcode-version: '16.2'
 
-    - name: Environment Info
+    - name: iOS Directory Analysis
       run: |
-        echo "=== Environment ==="
-        xcodebuild -version
-        echo "Node: $(node --version)"
-        echo "Ruby: $(ruby --version)"
-        echo "CocoaPods: $(pod --version)"
+        echo "=== iOS Directory Analysis ==="
+        cd ios
+        echo "Files in ios directory:"
+        ls -la
+        echo ""
+        echo "Podfile content:"
+        cat Podfile
+        echo ""
+        echo "Checking for existing Pods/Podfile.lock:"
+        ls -la Pods/ 2>/dev/null || echo "No Pods directory"
+        ls -la Podfile.lock 2>/dev/null || echo "No Podfile.lock"
 
-    - name: Pod Install (Known Working Step)
+    - name: Pod Install (Enhanced Logging)
       run: |
         cd ios
-        echo "=== Testing Pod Install ==="
-        pod install --repo-update
+        echo "=== Pod Install with Enhanced Logging ==="
+        echo "CocoaPods environment:"
+        pod env
+        echo ""
+        echo "Running pod install with verbose output:"
+        pod install --repo-update --verbose
+        echo ""
+        echo "Post-install verification:"
+        ls -la Pods/ | head -20
+        echo ""
+        echo "Checking Firebase pods installation:"
+        find Pods -name "*Firebase*" -type d | head -10
       env:
         RCT_NEW_ARCH_ENABLED: 1
         USE_HERMES: 1
 
-    - name: Verify Workspace Creation
+    - name: Workspace Verification
       run: |
         cd ios
-        echo "=== Verifying Workspace ==="
+        echo "=== Workspace Verification ==="
         if [ -f "GlicoTrack.xcworkspace/contents.xcworkspacedata" ]; then
           echo "✅ Workspace created successfully"
+          echo "Workspace contents:"
           ls -la GlicoTrack.xcworkspace/
+          echo ""
+          echo "Workspace data preview:"
+          head -20 GlicoTrack.xcworkspace/contents.xcworkspacedata
         else
           echo "❌ Workspace not found"
+          echo "Available files:"
+          ls -la
           exit 1
         fi
 
-    - name: Xcode Build (New Step - Testing)"
+    - name: Xcode Build (Verbose)
       run: |
         cd ios
-        echo "=== Building iOS App ==="
+        echo "=== Xcode Build with Verbose Output ==="
+        echo "Build command will be:"
+        echo "xcodebuild -workspace GlicoTrack.xcworkspace -scheme GlicoTrack -configuration Debug -sdk iphonesimulator -derivedDataPath build CODE_SIGNING_ALLOWED=NO build"
+        echo ""
+        echo "Starting build..."
         xcodebuild \
           -workspace GlicoTrack.xcworkspace \
           -scheme GlicoTrack \
@@ -67,11 +114,29 @@ jobs:
           -sdk iphonesimulator \
           -derivedDataPath build \
           CODE_SIGNING_ALLOWED=NO \
-          build
+          -verbose \
+          build 2>&1 | tee build_output.log
+        
+        echo ""
+        echo "=== Build Results Analysis ==="
+        if [ -f "build_output.log" ]; then
+          echo "Last 50 lines of build output:"
+          tail -50 build_output.log
+          echo ""
+          echo "Searching for error patterns:"
+          grep -i "error\|failed\|exception" build_output.log | tail -10 || echo "No obvious errors found in grep"
+        fi
+
+    - name: Upload Build Logs
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: build-logs
+        path: ios/build_output.log
 
     - name: Upload App (If Build Succeeds)
       uses: actions/upload-artifact@v4
       if: success()
       with:
-        name: GlicoTrack-iOS-Incremental
+        name: GlicoTrack-iOS-App
         path: ios/build/Build/Products/Debug-iphonesimulator/TempGlicoTrack.app
