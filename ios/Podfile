@@ -25,7 +25,7 @@ target 'TempGlicoTrack' do
       :mac_catalyst_enabled => false
     )
     
-    # Simplified post_install without Firebase/LevelDB patches
+    # Fix both Firebase/LevelDB and MMKV MRC issues
     installer.pods_project.targets.each do |target|
       target.build_configurations.each do |config|
         # Ensure consistent deployment target for all pods (Hermes compatible)
@@ -37,6 +37,27 @@ target 'TempGlicoTrack' do
         # Basic React Native New Architecture support
         config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] ||= []
         config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] << 'RCT_NEW_ARCH_ENABLED=1'
+      end
+      
+      # Fix react-native-mmkv MRC compilation issue
+      if target.name == 'MMKV'
+        target.build_configurations.each do |config|
+          config.build_settings['GCC_ENABLE_OBJC_EXCEPTIONS'] = 'YES'
+        end
+        
+        target.source_build_phase.files.each do |file|
+          if file.file_ref.path.end_with?('.cpp') || file.file_ref.path.end_with?('.mm')
+            # Files that need MRC (Manual Reference Counting)
+            if file.file_ref.path.include?('MiniPBCoder') || 
+               file.file_ref.path.include?('PBEncodeItem') ||
+               file.file_ref.path.include?('CodedInputData') ||
+               file.file_ref.path.include?('CodedOutputData')
+              
+              puts "🔧 Setting -fno-objc-arc for MMKV file: #{file.file_ref.path}"
+              file.settings = { 'COMPILER_FLAGS' => '-fno-objc-arc' }
+            end
+          end
+        end
       end
     end
     
