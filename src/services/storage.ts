@@ -1,4 +1,5 @@
-import { MMKV } from 'react-native-mmkv';
+// import { MMKV } from 'react-native-mmkv'; // Temporarily disabled
+import { MMKV } from './mmkv-mock'; // Mock for testing without MMKV
 import { DailyLog, AppSettings } from '../types';
 
 const storage = new MMKV();

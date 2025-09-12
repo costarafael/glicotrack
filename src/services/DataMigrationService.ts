@@ -3,12 +3,13 @@
  * Garante que dados da v1.0 sejam preservados na atualização
  */
 
-import { MMKV } from 'react-native-mmkv';
+// import { MMKV } from 'react-native-mmkv'; // Temporarily disabled for testing
+import { MMKV } from './mmkv-mock'; // Mock for testing without MMKV
 import { StorageService } from './storage';
 import { SimpleReminderService } from './SimpleReminderService';
 import { DailyLog, AppSettings } from '../types';
 
-const storage = new MMKV();
+const storage = new MMKV(); // Using mock for testing
 
 export interface MigrationResult {
   success: boolean;
