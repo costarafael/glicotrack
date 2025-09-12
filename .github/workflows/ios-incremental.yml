@@ -1,4 +1,4 @@
-name: iOS Build - No Firebase/MMKV Test
+name: iOS Build - Complete with JS Bundle
 
 on:
   workflow_dispatch:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   build-ios:
-    name: iOS Build WITHOUT Firebase/MMKV (Full Isolation)
+    name: Complete iOS Build with JavaScript Bundle
     runs-on: macos-14
 
     steps:
@@ -99,10 +99,25 @@ jobs:
           exit 1
         fi
 
-    - name: Xcode Build (Verbose)
+    - name: Generate JavaScript Bundle
+      run: |
+        echo "=== Generating React Native JavaScript Bundle ==="
+        echo "Creating iOS bundle for testing..."
+        npx react-native bundle \
+          --platform ios \
+          --dev false \
+          --entry-file index.js \
+          --bundle-output ios/main.jsbundle \
+          --assets-dest ios/assets/
+        echo ""
+        echo "Bundle generated successfully:"
+        ls -la ios/main.jsbundle || echo "Bundle file not found"
+        ls -la ios/assets/ || echo "Assets folder not found"
+
+    - name: Xcode Build with Bundle (Verbose)
       run: |
         cd ios
-        echo "=== Xcode Build with Verbose Output ==="
+        echo "=== Xcode Build with JavaScript Bundle ==="
         echo "Build command will be:"
         echo "xcodebuild -workspace GlicoTrack.xcworkspace -scheme GlicoTrack -configuration Debug -sdk iphonesimulator -derivedDataPath build CODE_SIGNING_ALLOWED=NO build"
         echo ""
@@ -125,6 +140,17 @@ jobs:
           echo ""
           echo "Searching for error patterns:"
           grep -i "error\|failed\|exception" build_output.log | tail -10 || echo "No obvious errors found in grep"
+        fi
+        
+        echo ""
+        echo "=== Verifying Bundle in App ==="
+        app_path="build/Build/Products/Debug-iphonesimulator/TempGlicoTrack.app"
+        if [ -d "$app_path" ]; then
+          echo "App contents:"
+          ls -la "$app_path"
+          echo ""
+          echo "Looking for JavaScript bundle:"
+          find "$app_path" -name "*.jsbundle" -o -name "main.js*" || echo "No JS bundle found in app"
         fi
 
     - name: Upload Build Logs
